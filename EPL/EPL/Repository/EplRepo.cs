@@ -12,7 +12,7 @@ namespace EPL.Repository
 
         public EplRepo()
         {
-            _connection = new SqlConnection(@"Server = .\SQLEXPRESS; Database = Epldb; User ID = test; Password = 1234567abcd;");
+            _connection = new SqlConnection(@"Server = sql5035.smarterasp.net; Database = DB_A1ACC5_test; User ID = DB_A1ACC5_test_admin; Password = 1234567a;");
             _connection.Open();
         }
 
@@ -28,8 +28,8 @@ namespace EPL.Repository
                          BEGIN UPDATE  [dbo].[Schedule] 
                               SET Homeid=(select TeamId from TeamInfo where TeamName=@HomeTeam),Awayid=(select TeamId from TeamInfo where TeamName=@AwayTeam),HomeTeam=@HomeTeam,AwayTeam=@AwayTeam,Link=@Link,Time=@Time where Id=@Id;
                          END ELSE BEGIN
-                         INSERT INTO [dbo].[Schedule] ([Id],[Homeid],[Awayid],[HomeTeam],[AwayTeam],[Stadium] ,[Link],[Time])
-                         VALUES (@Id,(select TeamId from TeamInfo where TeamName=@HomeTeam) ,(select TeamId from TeamInfo where TeamName=@AwayTeam),@HomeTeam,@AwayTeam,(select TeamStadium from TeamInfo where TeamName=@HomeTeam),@Link,@Time)
+                         INSERT INTO [dbo].[Schedule] ([Homeid],[Awayid],[HomeTeam],[AwayTeam],[Stadium] ,[Link],[Time])
+                         VALUES ((select TeamId from TeamInfo where TeamName=@HomeTeam) ,(select TeamId from TeamInfo where TeamName=@AwayTeam),@HomeTeam,@AwayTeam,(select TeamStadium from TeamInfo where TeamName=@HomeTeam),@Link,@Time)
                          End";
             _connection.Execute(sql, scheduler);
             _connection.Close();
