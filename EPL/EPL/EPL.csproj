@@ -250,6 +250,7 @@
     </Content>
     <Content Include="fonts\PremierLeagueW01-Bold.woff2" />
     <Content Include="fonts\PremierLeagueW01-Regular.woff2" />
+    <None Include="Properties\PublishProfiles\local.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
