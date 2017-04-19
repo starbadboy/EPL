@@ -15,14 +15,15 @@ namespace EPL.Service
             foreach (var schedule in schedules)
             {
                 DateTimeFormatInfo dfi = DateTimeFormatInfo.CurrentInfo;
-                if (dfi != null)
-                {
-                    Calendar cal = dfi.Calendar;
+                //if (dfi != null)
+                //{
+                //    Calendar cal = dfi.Calendar;
 
-                    //if (cal.GetWeekOfYear(schedule.Time, dfi.CalendarWeekRule,
-                    //        dfi.FirstDayOfWeek) != cal.GetWeekOfYear(DateTime.Now, dfi.CalendarWeekRule,
-                    //        dfi.FirstDayOfWeek)) continue;
-                }
+                //    if (cal.GetWeekOfYear(schedule.Time, dfi.CalendarWeekRule,
+                //            dfi.FirstDayOfWeek) != cal.GetWeekOfYear(DateTime.Today.AddDays(1), dfi.CalendarWeekRule,
+                //            dfi.FirstDayOfWeek)) continue;
+                //}
+                if(schedule.Time<DateTime.Today) continue;
                 var viewmodel = new ScheduleViewModel
                 {
                     Id = schedule.Id,
