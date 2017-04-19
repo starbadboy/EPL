@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using EPL.DataModel;
 using EPL.ViewModels;
@@ -12,6 +14,15 @@ namespace EPL.Service
             List<ScheduleViewModel> viewModels = new List<ScheduleViewModel>();
             foreach (var schedule in schedules)
             {
+                DateTimeFormatInfo dfi = DateTimeFormatInfo.CurrentInfo;
+                if (dfi != null)
+                {
+                    Calendar cal = dfi.Calendar;
+
+                    //if (cal.GetWeekOfYear(schedule.Time, dfi.CalendarWeekRule,
+                    //        dfi.FirstDayOfWeek) != cal.GetWeekOfYear(DateTime.Now, dfi.CalendarWeekRule,
+                    //        dfi.FirstDayOfWeek)) continue;
+                }
                 var viewmodel = new ScheduleViewModel
                 {
                     Id = schedule.Id,
@@ -27,7 +38,7 @@ namespace EPL.Service
             }
             var dict = viewModels.GroupBy(x => x.LongEventDate)
                              .ToDictionary(gdc => gdc.Key, gdc => gdc.ToList());
-            return new ScheduleViewModelCollection {Collection = dict}; ;
+            return new ScheduleViewModelCollection {Collection = dict}; 
         }
     }
 }

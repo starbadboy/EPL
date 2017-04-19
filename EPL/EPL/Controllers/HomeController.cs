@@ -1,6 +1,5 @@
-﻿using System;
+﻿using System.Globalization;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using EPL.Repository;
 using EPL.Service;
@@ -11,7 +10,10 @@ namespace EPL.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var repo = new EplRepo();
+            var schedules = repo.GetAllSchedule();
+            var viewmodels = new ScheduleService().MapToViewModel(schedules);
+            return View(viewmodels);
         }
 
         public ActionResult About()
@@ -21,21 +23,21 @@ namespace EPL.Controllers
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-            var repo = new EplRepo();
-            var schedules = repo.GetAllSchedule();
-            var viewmodels = new ScheduleService().MapToViewModel(schedules);
-            return View(viewmodels);
-        }
+        //public ActionResult Contact()
+        //{
+        //    ViewBag.Message = "Your contact page.";
+        //    var repo = new EplRepo();
+        //    var schedules = repo.GetAllSchedule();
+        //    var viewmodels = new ScheduleService().MapToViewModel(schedules);
+        //    return View(viewmodels);
+        //}
 
 
-        public ActionResult AddSchedule()
-        {
-            ViewBag.Message = "Your Add Schedule page.";
+        //public ActionResult AddSchedule()
+        //{
+        //    ViewBag.Message = "Your Add Schedule page.";
 
-            return View();
-        }
+        //    return View();
+        //}
     }
 }
