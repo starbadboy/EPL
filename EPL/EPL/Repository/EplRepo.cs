@@ -12,7 +12,7 @@ namespace EPL.Repository
 
         public EplRepo()
         {
-            _connection = new SqlConnection(@"Server = .\SQLEXPRESS; Database = Epldb; User ID = test; Password = 1234567abcd;");
+            _connection = new SqlConnection(@"Server = sql5035.smarterasp.net; Database = DB_A1ACC5_test; User ID = DB_A1ACC5_test_admin; Password = 1234567a;");
             _connection.Open();
         }
 
