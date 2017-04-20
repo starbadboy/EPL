@@ -35,3 +35,17 @@ insert into [DB_A1ACC5_test].[dbo].[TeamInfo]
   (21,'West Ham United','London Stadium'),
   (43,'Manchester City','Etihad Stadium'),
   (56,'Sunderland','Stadium of Light')
+  
+  
+  
+    update Table_A set Table_A.HomeTeam=b.TeamName,Table_A.Stadium=b.TeamStadium 
+  from
+  Schedule AS Table_A
+  inner join
+   (select teamid,teamname,teamstadium from TeamInfo where TeamId in(90,14)) as b
+   on Table_A.Homeid=b.TeamId 
+ 
+
+  
+  
+  
