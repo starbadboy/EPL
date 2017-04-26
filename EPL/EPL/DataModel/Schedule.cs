@@ -24,6 +24,8 @@ namespace EPL.DataModel
         public int Awayid { get; set; }
         public string HomeTeam { get; set; }
         public string AwayTeam { get; set; }
+        public string HomeTeamCn { get; set; }
+        public string AwayTeamCn { get; set; }
         public DateTime Time { get; set; }
         public string Stadium { get; set; }
         public string Link { get; set; }
