@@ -12,9 +12,15 @@
 [Rr]elease/
 x64/
 build/
-[Bb]in/
-[Oo]bj/
+EPL/[Bb]in/
+EPL/[Oo]bj/
 Artifacts/
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
 
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
 !packages/*/build/
@@ -22,7 +28,12 @@ Artifacts/
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
-
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
 *_i.c
 *_p.c
 *.ilk

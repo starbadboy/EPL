@@ -18,11 +18,14 @@ namespace EPL.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
+        public ActionResult LinkPage(string url)
+        {
+            ViewBag.Message = url;
+            return View();
+        }
         //public ActionResult Contact()
         //{
         //    ViewBag.Message = "Your contact page.";

@@ -6,7 +6,7 @@
     @Styles.Render("~/Content/eplcss")
 </head>
 
-
+<meta name="referrer" content="no-referrer" />
 @foreach (var keyvaluePair in Model.Collection)
 {
     <section class="fixtures">
@@ -37,7 +37,7 @@
                              </span>
                          </a>
                  
-                            <span data-ui-modal="#quickviewModal" class="btn quickView" onclick="window.open(@list.Link)" role="button">Watch Live</span>
+                            <span data-ui-modal="#quickviewModal" class="btn quickView" role="button">@Html.ActionLink("Watch Live", "LinkPage", "Home",new {url=@list.Link},null)</span>
                         }
                         else
                         {
@@ -50,10 +50,16 @@
                                         <span class="team"><span class="badge-25 t@(@list.Awayid)"></span> <span class="teamName">@Html.Raw(list.AwayTeam) </span></span>
                                     </span>
                                     <span class="stadiumName"><span class="icn stadium"></span> @Html.Raw(list.Stadium)</span>
-                                    <span class="broadcaster"></span> <span class="icn arrow-right"></span>
+                                    @*<span class="fixtureBroadcast broadcastDataContainer">
+                                      <span class="broadcaster">Links   
+                                         <span  class="logo broadcaster-SINGMIO" onclick="window.open('http://us.141592653589793238462643383.com/cs.html?id=qie786')"></span>
+                                          <span class="logo broadcaster-SINGMIO" onclick="alert('abc')"></span>
+                                      </span>  
+                                    </span>*@
+                                     <span class="icn arrow-right"></span>
                                 </span>
                             </a>
-                            <span data-ui-modal="#quickviewModal" class="btn quickView" onclick=" " role="button">Link </span>
+                            <span data-ui-modal="#quickviewModal" class="btn quickView" role="button">@Html.ActionLink("Link", "LinkPage", "Home",new {link=@list.Link})</span>
                         }
                     </li>
 
