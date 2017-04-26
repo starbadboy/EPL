@@ -265,6 +265,5 @@ D:\Git\EPL\EPL\bin\Microsoft.Owin.Security.OAuth.xml
 D:\Git\EPL\EPL\bin\Microsoft.Owin.Security.Google.xml
 D:\Git\EPL\EPL\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Git\EPL\EPL\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\Git\EPL\EPL\obj\Debug\EPL.csprojResolveAssemblyReference.cache
 D:\Git\EPL\EPL\obj\Debug\EPL.dll
 D:\Git\EPL\EPL\obj\Debug\EPL.pdb

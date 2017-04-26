@@ -12,13 +12,17 @@ namespace EPL.Repository
 
         public EplRepo()
         {
-            _connection = new SqlConnection(@"Server = sql5035.smarterasp.net; Database = DB_A1ACC5_test; User ID = DB_A1ACC5_test_admin; Password = 1234567a;");
+            _connection = new SqlConnection(@"Server = .\SQLEXPRESS; Database = Epldb; User ID = test; Password = 1234567abcd;");
             _connection.Open();
         }
 
         public List<Schedule> GetAllSchedule()
         {
-            var sql = @"select * from schedule order by time";
+            var sql = @"select t1.Id,Homeid,Awayid,HomeTeam,AwayTeam,stadium,HomeTeamCn,AwayTeamCn,Time from (
+                        (select id, a.Homeid,a.Awayid,b.TeamName as HomeTeam,b.TeamStadium as stadium,b.TeamNameCN as HomeTeamcn, a.Time from schedule a join TeamInfo b on a.Homeid=b.TeamId) t1
+                        left join
+                        (select id, b.TeamName as AwayTeam,b.TeamNameCN as AwayTeamCn from schedule a join TeamInfo b on a.Awayid=b.TeamId) t2
+                        on t1.id=t2.Id) order by time asc";
             return _connection.Query<Schedule>(sql).ToList();
         }
         public void UpSertSchedule(Schedule scheduler)
@@ -36,7 +40,7 @@ namespace EPL.Repository
 
         public void DeleteSchedule(int i)
         {
-            var sql = @"delete from schedule where id ="+i;
+            var sql = @"delete from schedule where id =" + i;
             _connection.Execute(sql);
             _connection.Close();
         }
