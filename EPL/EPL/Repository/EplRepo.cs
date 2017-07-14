@@ -10,9 +10,14 @@ namespace EPL.Repository
     {
         private readonly SqlConnection _connection;
 
+        private SqlConnection _localsqlConnection;
+        private SqlConnection _productionsqlConnection;
+
         public EplRepo()
         {
-            _connection = new SqlConnection(@"Server = .\SQLEXPRESS; Database = Epldb; User ID = test; Password = 1234567abcd;");
+            _localsqlConnection = new SqlConnection(@"Server = .\SQLEXPRESS; Database = Epldb; User ID = test; Password = 1234asdf;");
+            _productionsqlConnection = new SqlConnection(@"Data Source=SQL5036.SmarterASP.NET;Initial Catalog=DB_A27F66_epl;User Id=DB_A27F66_epl_admin;Password=asdf1234;");
+            _connection = _productionsqlConnection;
             _connection.Open();
         }
 
