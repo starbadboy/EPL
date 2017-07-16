@@ -10,39 +10,63 @@
 
          @foreach (var keyvaluePair in Model.Collection)
          {
-            <section class="fixtures">
-                <time class="date long" datetime=@Html.Raw(keyvaluePair.Key)><strong>@Html.Raw(keyvaluePair.Key)</strong></time>
-                <time class="date short" datetime=@Html.Raw(keyvaluePair.Key)><strong>Sat 3 Dec 2016</strong></time>
-                <div data-competition-matches-list=@Html.Raw(keyvaluePair.Key)>
-                    <div class="competition right"><span class="competitionImage1"></span><span class="competitionLabel1">Premier League</span></div>
-                    <ul class="matchList">
-                        @foreach (var list in keyvaluePair.Value)
-                        {
+             <section class="fixtures">
+                 <time class="date long" datetime=@Html.Raw(keyvaluePair.Key)><strong>@Html.Raw(keyvaluePair.Key)</strong></time>
+                 <time class="date short" datetime=@Html.Raw(keyvaluePair.Key)><strong>@Html.Raw(keyvaluePair.Value.First().ShortEventDate)</strong></time>
+                 <div data-competition-matches-list=@Html.Raw(keyvaluePair.Key)>
+                     <div class="competition right"><span class="competitionImage1"></span><span class="competitionLabel1">Premier League</span></div>
+                     <ul class="matchList">
+                         @foreach (var list in keyvaluePair.Value)
+                         {
 
-                            <li class="matchFixtureContainer"
-                                data-home=@Html.Raw(list.HomeTeam) data-away=@Html.Raw(list.AwayTeam) data-competition="Premier League"
-                                data-venue=@Html.Raw(list.Stadium) data-comp-match-item="14173" data-comp-match-item-ko="1480768200000"
-                                data-comp-match-item-status="U">
-                                <a data-template-rendered="" href="//www.premierleague.com/match/14173" class="fixture preMatch" data-matchid="14173">
-                                    <span class="overview">
-                                        <span class="teams">
-                                            <span class="team"><span class="teamName">@Html.Raw(list.HomeTeam)</span><span class="badge-25 t@(@list.Homeid)"></span></span>
-                                            <time datetime="20:30">@Html.Raw(list.KickOffTimeWithOutDate)</time>
-                                            <span class="team"><span class="badge-25 t@(@list.Awayid)"></span> <span class="teamName">@Html.Raw(list.AwayTeam) </span></span>
-                                        </span>
-                                        <span class="stadiumName"><span class="icn stadium"></span> @Html.Raw(list.Stadium)</span>
-                                        <span class="broadcaster"></span> <span class="icn arrow-right"></span>
-                                    </span>
-                                </a>
-                                @if (!string.IsNullOrEmpty(list.Link))
-                                {
-                                    <span data-ui-modal="#quickviewModal" class="btn quickView" onclick="window.location.href = '//@Html.Raw(list.Link)'" role="button">Watch Live</span>
-                                }
-                            </li>
+                             <li class="matchFixtureContainer"
+                                 data-home=@Html.Raw(list.HomeTeam) data-away=@Html.Raw(list.AwayTeam) data-competition="Premier League"
+                                 data-venue=@Html.Raw(list.Stadium) data-comp-match-item="14173" data-comp-match-item-ko="1480768200000"
+                                 data-comp-match-item-status="U">
+                                 @if (!string.IsNullOrEmpty(list.Link))
+                                 {
+                                     <a data-template-rendered="" href=@Html.Raw(list.Link) class="fixture preMatch" data-matchid="14173">
+                            
+                                         <span class="overview">
+                                             <span class="teams">
+                                                 <span class="team"><span class="teamName">@Html.Raw(list.HomeTeam)</span><span class="badge-25 t@(@list.Homeid)"></span></span>
+                                                 <time >@Html.Raw(list.KickOffTimeWithOutDate)</time>
+                                                 <span class="team"><span class="badge-25 t@(@list.Awayid)"></span> <span class="teamName">@Html.Raw(list.AwayTeam) </span></span>
+                                             </span>
+                                             <span class="stadiumName"><span class="icn stadium"></span> @Html.Raw(list.Stadium)</span>
+                                             <span class="broadcaster"></span> <span class="icn arrow-right"></span>
+                                         </span>
+                                     </a>
+                 
+                                     <span data-ui-modal="#quickviewModal" class="btn quickView" role="button">@Html.ActionLink("Watch Live", "LinkPage", "Home",new {url=@list.Link},null)</span>
+                                 }
+                                 else
+                                 {
+                                     <a data-template-rendered="" href="" class="fixture preMatch" data-matchid="14173">
+                            
+                                         <span class="overview">
+                                             <span class="teams">
+                                                 <span class="team"><span class="teamName">@Html.Raw(list.HomeTeam)</span><span class="badge-25 t@(@list.Homeid)"></span></span>
+                                                 <time datetime="20:30">@Html.Raw(list.KickOffTimeWithOutDate)</time>
+                                                 <span class="team"><span class="badge-25 t@(@list.Awayid)"></span> <span class="teamName">@Html.Raw(list.AwayTeam) </span></span>
+                                             </span>
+                                             <span class="stadiumName"><span class="icn stadium"></span> @Html.Raw(list.Stadium)</span>
+                                             @*<span class="fixtureBroadcast broadcastDataContainer">
+                                      <span class="broadcaster">Links   
+                                         <span  class="logo broadcaster-SINGMIO" onclick="window.open('http://us.141592653589793238462643383.com/cs.html?id=qie786')"></span>
+                                          <span class="logo broadcaster-SINGMIO" onclick="alert('abc')"></span>
+                                      </span>  
+                                    </span>*@
+                                             <span class="icn arrow-right"></span>
+                                         </span>
+                                     </a>
+                                     <span data-ui-modal="#quickviewModal" class="btn quickView" role="button">@Html.ActionLink("Link", "LinkPage", "Home",new {link=@list.Link})</span>
+                                 }
+                             </li>
 
-                        }
-                    </ul>
-                </div>
-            </section>
+                         }
+                     </ul>
+                 </div>
+             </section>
          }
          

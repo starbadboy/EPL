@@ -51,5 +51,6 @@ namespace EPL.ViewModels
 
         public string KickOffTimeWithOutDate => Time.ToString("HH:mm");
         public string LongEventDate => Time.DayOfWeek+" " + Time.ToString("MMMM dd, yyyy");
+        public string ShortEventDate => Time.ToString("ddd dd MMM yyyy");
     }
 }

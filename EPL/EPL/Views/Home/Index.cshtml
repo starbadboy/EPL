@@ -12,7 +12,7 @@
 {
     <section class="fixtures">
         <time class="date long" datetime=@Html.Raw(keyvaluePair.Key)><strong>@Html.Raw(keyvaluePair.Key)</strong></time>
-        <time class="date short" datetime=@Html.Raw(keyvaluePair.Key)><strong>@Html.Raw(keyvaluePair.Key)</strong></time>
+        <time class="date short" datetime=@Html.Raw(keyvaluePair.Key)><strong>@Html.Raw(keyvaluePair.Value.First().ShortEventDate)</strong></time>
         <div data-competition-matches-list=@Html.Raw(keyvaluePair.Key)>
             <div class="competition right"><span class="competitionImage1"></span><span class="competitionLabel1">Premier League</span></div>
             <ul class="matchList">
@@ -30,7 +30,7 @@
                              <span class="overview">
                                  <span class="teams">
                                      <span class="team"><span class="teamName">@Html.Raw(list.HomeTeam)</span><span class="badge-25 t@(@list.Homeid)"></span></span>
-                                     <time datetime="20:30">@Html.Raw(list.KickOffTimeWithOutDate)</time>
+                                     <time >@Html.Raw(list.KickOffTimeWithOutDate)</time>
                                      <span class="team"><span class="badge-25 t@(@list.Awayid)"></span> <span class="teamName">@Html.Raw(list.AwayTeam) </span></span>
                                  </span>
                                  <span class="stadiumName"><span class="icn stadium"></span> @Html.Raw(list.Stadium)</span>
