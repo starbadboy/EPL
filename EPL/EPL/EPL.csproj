@@ -234,12 +234,14 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\epl.css" />
+    <Content Include="Image\badges-25-sprite%40x2.png" />
     <Content Include="Image\badges-25-sprite.png" />
     <Content Include="Image\badges-50-sprite.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\global-sprite%40x2.png" />
     <Content Include="Image\global-sprite.png" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
