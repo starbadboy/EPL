@@ -16,6 +16,7 @@
         ga('send', 'pageview');
 
     </script>
+    <meta name="exoclick-site-verification" content="708e59aa711cc98794f7b3117e88c481">
 
 </head>
 <body>
@@ -40,6 +41,20 @@
     </div>
     <div class="container body-content">
         @RenderBody()
+        <script type="text/javascript">
+            var ad_idzone = "2697954",
+                ad_width = "468",
+                ad_height = "60",
+                v_pos = "top",
+                h_pos = "left",
+                eventMethod = window.addEventListener ? "addEventListener" : "attachEvent",
+                eventer = window[eventMethod],
+                messageEvent = (eventMethod == "attachEvent") ? "onmessage" : "message";
+
+            eventer(messageEvent, (function(ad_idzone){
+                return function(e) { if (e.data == "show-iframe-" + ad_idzone) document.getElementById("sticky-banner-" + ad_idzone).style.display = ""; };
+            })(ad_idzone), false);
+        </script>
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
