@@ -17,7 +17,7 @@
         <time class="date long" datetime=@Html.Raw(keyvaluePair.Key)><strong>@Html.Raw(keyvaluePair.Key)</strong></time>
         <time class="date short" datetime=@Html.Raw(keyvaluePair.Key)><strong>@Html.Raw(keyvaluePair.Value.First().ShortEventDate)</strong></time>
         <div data-competition-matches-list=@Html.Raw(keyvaluePair.Key)>
-            
+
             <div class="competition right"><span class="competitionImage1"></span><span class="competitionLabel1">Premier League</span>
             </div>
             <ul class="matchList">
@@ -65,7 +65,7 @@
                                     <span class="icn arrow-right"></span>
                                 </span>
                             </a>
-                            <span data-ui-modal="#quickviewModal" class="btn quickView" role="button">@Html.ActionLink("Link", "LinkPage", "Home", new {link = @list.Link})</span>
+                            //<span data-ui-modal="#quickviewModal" class="btn quickView" role="button">@Html.ActionLink("Link", "LinkPage", "Home", new {link = @list.Link})</span>
                         }
                     </li>
 
@@ -75,5 +75,7 @@
     </section>
 }
 
-    </body>
+
+
+</body>
          

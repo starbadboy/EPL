@@ -20,49 +20,41 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Watch EPL Live", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("EPL Fixture", "Index", "Home")</li>
-                    <li>@Html.ActionLink("CCTV 5", "About", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+    <script type="text/javascript">
+    var ad_idzone = "2701390",
+        ad_frequency_period = 1,
+        ad_frequency_count = 1;
+    </script>
+    <script type="text/javascript" src="https://ads.exdynsrv.com/popunder1000.js"></script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Watch EPL Live", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("EPL Fixture", "Index", "Home")</li>
+                <li>@Html.ActionLink("CCTV 5", "About", "Home")</li>
+            </ul>
+            @Html.Partial("_LoginPartial")
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <script type="text/javascript">
-            var ad_idzone = "2697954",
-                ad_width = "468",
-                ad_height = "60",
-                v_pos = "top",
-                h_pos = "left",
-                eventMethod = window.addEventListener ? "addEventListener" : "attachEvent",
-                eventer = window[eventMethod],
-                messageEvent = (eventMethod == "attachEvent") ? "onmessage" : "message";
+</div>
+<div class="container body-content">
+    @RenderBody()
+    <hr/>
+    <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+</div>
 
-            eventer(messageEvent, (function(ad_idzone){
-                return function(e) { if (e.data == "show-iframe-" + ad_idzone) document.getElementById("sticky-banner-" + ad_idzone).style.display = ""; };
-            })(ad_idzone), false);
-        </script>
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
 </body>
 </html>
