@@ -25,6 +25,11 @@ namespace EPL.Controllers
             return View();
         }
 
+        public ActionResult Chat()
+        {
+            return View();
+        }
+
         public ActionResult LinkPage(string url)
         {
             ViewBag.Message = url;
