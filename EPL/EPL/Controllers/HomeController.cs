@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using System.Linq;
 using System.Web.Mvc;
 using EPL.Repository;
@@ -12,7 +13,10 @@ namespace EPL.Controllers
         {
             var repo = new EplRepo();
             var schedules = repo.GetAllSchedule();
-            var viewmodels = new ScheduleService().MapToViewModel(schedules);
+            DateTime gmt8time =TimeZoneInfo.ConvertTimeBySystemTimeZoneId(
+                DateTime.UtcNow, "Singapore Standard Time");
+            var showingschedules = schedules.Where(x => (x.Time - gmt8time).TotalHours >= -3).ToList();
+            var viewmodels = new ScheduleService().MapToViewModel(showingschedules);
             return View(viewmodels);
         }
 
