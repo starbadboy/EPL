@@ -30,9 +30,8 @@
                         data-comp-match-item-status="U">
                         @if (!string.IsNullOrEmpty(list.Link))
                         {
-                            <a data-template-rendered="" href=@Html.Raw(list.Link) class="fixture preMatch" data-matchid="14173">
-
-                                <span class="overview">
+                            <a data-template-rendered="" href=@Url.Action("LinkPage", "Home", new {url = @list.Link}, null) class="fixture preMatch" data-matchid="14173">
+                                <span class="overview" >
                                     <span class="teams">
                                         <span class="team"><span class="teamName">@Html.Raw(list.HomeTeam)</span><span class="badge-25 t@(@list.Homeid)"></span></span>
                                         <time >@Html.Raw(list.KickOffTimeWithOutDate)</time>
