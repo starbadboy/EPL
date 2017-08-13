@@ -244,6 +244,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Image\global-sprite%40x2.png" />
     <Content Include="Image\global-sprite.png" />
+    <Content Include="Image\pay.png" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -303,6 +304,7 @@
     <Content Include="Views\Home\AddSchedule.cshtml" />
     <Content Include="Views\Home\LinkPage.cshtml" />
     <Content Include="Views\Home\Chat.cshtml" />
+    <Content Include="Views\Home\Donate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

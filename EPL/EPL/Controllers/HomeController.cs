@@ -30,6 +30,11 @@ namespace EPL.Controllers
             return View();
         }
 
+        public ActionResult Donate()
+        {
+            return View();
+        }
+
         public ActionResult LinkPage(string url)
         {
             ViewBag.Message = url;
