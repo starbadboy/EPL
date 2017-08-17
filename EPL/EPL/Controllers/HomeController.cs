@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Globalization;
 using System.Linq;
 using System.Web.Mvc;
@@ -24,7 +25,7 @@ namespace EPL.Controllers
         {
             var schedules = GetAllSchedules();
             var pastMatches = schedules.Where(x => (x.Time - GetGmt8TimeNow()).TotalHours < -3).ToList();
-            var viewmodels = new ScheduleService().MapToViewModel(pastMatches);
+            var viewmodels = new ScheduleService().MapToViewModel(pastMatches.Where(x=>x.Time > new DateTime(1900,1,1)).ToList());
             return View(viewmodels);
         }
         private static DateTime GetGmt8TimeNow()
