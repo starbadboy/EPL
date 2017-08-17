@@ -49,6 +49,18 @@ namespace EPL.ViewModels
         [Display(Name = "Link")]
         public string Link { get; set; }
 
+        [DataType(DataType.Url)]
+        [Display(Name = "HighLightLink")]
+        public string HighLightLink { get; set; }
+
+        [DataType(DataType.Url)]
+        [Display(Name = "FirstHalfLink")]
+        public string FirstHalfLink { get; set; }
+
+        [DataType(DataType.Url)]
+        [Display(Name = "SecondHalfLink")]
+        public string SecondHalfLink { get; set; }
+
         public string KickOffTimeWithOutDate => Time.ToString("HH:mm");
         public string LongEventDate => Time.DayOfWeek+" " + Time.ToString("MMMM dd, yyyy");
         public string ShortEventDate => Time.ToString("ddd dd MMM yyyy");

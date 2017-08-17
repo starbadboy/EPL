@@ -29,5 +29,8 @@ namespace EPL.DataModel
         public DateTime Time { get; set; }
         public string Stadium { get; set; }
         public string Link { get; set; }
+        public string HighLightLink { get; set; }
+        public string FirstHalfLink { get; set; }
+        public string SecondHalfLink { get; set; }
     }
 }

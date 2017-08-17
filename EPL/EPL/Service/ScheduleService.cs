@@ -23,7 +23,6 @@ namespace EPL.Service
                 //            dfi.FirstDayOfWeek) != cal.GetWeekOfYear(DateTime.Today.AddDays(1), dfi.CalendarWeekRule,
                 //            dfi.FirstDayOfWeek)) continue;
                 //}
-                if(schedule.Time<DateTime.Today) continue;
                 var viewmodel = new ScheduleViewModel
                 {
                     Id = schedule.Id,
@@ -33,7 +32,10 @@ namespace EPL.Service
                     AwayTeam = schedule.AwayTeam,
                     Time = schedule.Time,
                     Link = schedule.Link,
-                    Stadium = schedule.Stadium
+                    Stadium = schedule.Stadium,
+                    FirstHalfLink = schedule.FirstHalfLink,
+                    SecondHalfLink = schedule.SecondHalfLink,
+                    HighLightLink = schedule.HighLightLink
                 };
                 viewModels.Add(viewmodel);
             }

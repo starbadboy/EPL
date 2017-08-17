@@ -23,8 +23,8 @@ namespace EPL.Repository
 
         public List<Schedule> GetAllSchedule()
         {
-            var sql = @"select t1.Id,Homeid,Awayid,HomeTeam,AwayTeam,stadium,HomeTeamCn,AwayTeamCn,Time,link from (
-                        (select id, a.Homeid,a.Awayid,b.TeamName as HomeTeam,b.TeamStadium as stadium,b.TeamNameCN as HomeTeamcn, a.Time,a.link from schedule a join TeamInfo b on a.Homeid=b.TeamId) t1
+            var sql = @"select t1.Id,Homeid,Awayid,HomeTeam,AwayTeam,stadium,HomeTeamCn,AwayTeamCn,Time,link,highlightlink,firsthalflink,secondhalflink from (
+                        (select id, a.Homeid,a.Awayid,b.TeamName as HomeTeam,b.TeamStadium as stadium,b.TeamNameCN as HomeTeamcn, a.Time,a.link,a.highlightlink,a.firsthalflink,a.secondhalflink from schedule a join TeamInfo b on a.Homeid=b.TeamId) t1
                         left join
                         (select id, b.TeamName as AwayTeam,b.TeamNameCN as AwayTeamCn from schedule a join TeamInfo b on a.Awayid=b.TeamId) t2
                         on t1.id=t2.Id) order by time asc";
