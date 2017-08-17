@@ -44,11 +44,11 @@
                             <span data-ui-modal="#quickviewModal" class="btn quickView" role="button">@Html.ActionLink("Match HighLight", "LinkPage", "Home", new { url = @list.HighLightLink }, null)</span>
                              if (!string.IsNullOrEmpty(list.FirstHalfLink))
                              {
-                                 <span role="button">@Html.ActionLink("First Half video", "LinkPage", "Home", new {url = @list.FirstHalfLink}, null)</span>
+                                 <span role="button">@Html.ActionLink("1st Half", "LinkPage", "Home", new {url = @list.FirstHalfLink}, null)</span>
                              }
                             if (!string.IsNullOrEmpty(list.SecondHalfLink))
                             {
-                                <span role="button">@Html.ActionLink("Second Half video", "LinkPage", "Home", new {url = @list.SecondHalfLink}, null)</span>
+                                <span role="button">@Html.ActionLink("2nd Half", "LinkPage", "Home", new {url = @list.SecondHalfLink}, null)</span>
                             }
                         }
                         else
