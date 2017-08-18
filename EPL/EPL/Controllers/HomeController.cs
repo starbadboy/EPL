@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlTypes;
-using System.Globalization;
 using System.Linq;
+using System.Web.Caching;
 using System.Web.Mvc;
 using EPL.DataModel;
 using EPL.Repository;
@@ -14,8 +13,13 @@ namespace EPL.Controllers
     {
         public ActionResult Index()
         {
-            var schedules = GetAllSchedules();
-            var showingschedules = schedules.Where(x => (x.Time - GetGmt8TimeNow()).TotalHours >= -3).ToList();
+            if (HttpContext.Cache.Get("schedulers") == null)
+            {
+                HttpContext.Cache.Insert("schedulers", GetAllSchedules(), null, DateTime.Now.AddMinutes(1),
+                    Cache.NoSlidingExpiration);
+            }
+            var schedulers = (List<Schedule>)HttpContext.Cache.Get("schedulers");
+            var showingschedules = schedulers.Where(x => (x.Time - GetGmt8TimeNow()).TotalHours >= -3).ToList();
             var viewmodels = new ScheduleService().MapToViewModel(showingschedules);
             return View(viewmodels);
         }
@@ -23,8 +27,13 @@ namespace EPL.Controllers
 
         public ActionResult Videos()
         {
-            var schedules = GetAllSchedules();
-            var pastMatches = schedules.Where(x => (x.Time - GetGmt8TimeNow()).TotalHours < -3).ToList();
+            if (HttpContext.Cache.Get("schedulers") == null)
+            {
+                HttpContext.Cache.Insert("schedulers", GetAllSchedules(), null, DateTime.UtcNow.AddSeconds(30),
+                    Cache.NoSlidingExpiration);
+            }
+            var schedulers = (List<Schedule>)HttpContext.Cache.Get("schedulers");
+            var pastMatches = schedulers.Where(x => (x.Time - GetGmt8TimeNow()).TotalHours < -3).ToList();
             var viewmodels = new ScheduleService().MapToViewModel(pastMatches.Where(x=>x.Time > new DateTime(1900,1,1)).ToList());
             return View(viewmodels);
         }
