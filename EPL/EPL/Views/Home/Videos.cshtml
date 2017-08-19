@@ -40,20 +40,39 @@
                                     <span class="broadcaster"></span> <span class="icn arrow-right"></span>
                                 </span>
                             </a>
-                            <span data-ui-modal="#quickviewModal" class="btn quickView" role="button">@Html.ActionLink("Match HighLight", "LinkPage", "Home", new { url = @list.HighLightLink }, null)</span>
-                            if (!string.IsNullOrEmpty(list.HighLightLink)&& Request.Browser.IsMobileDevice)
+                            if (HttpContext.Current.Request.UserLanguages != null && HttpContext.Current.Request.UserLanguages[0].ToLower() == "zh-cn")
                             {
-                                <span  role="button">@Html.ActionLink("HighLight", "LinkPage", "Home", new {url = @list.HighLightLink}, null)</span>
+                                <span data-ui-modal="#quickviewModal" class="btn quickView" role="button">@Html.ActionLink("比赛集锦", "LinkPage", "Home", new {url = @list.HighLightLink}, null)</span>
+                                if (!string.IsNullOrEmpty(list.HighLightLink) && Request.Browser.IsMobileDevice)
+                                {
+                                    <span role="button">@Html.ActionLink("比赛集锦", "LinkPage", "Home", new {url = @list.HighLightLink}, null)</span>
+                                }
+                                if (!string.IsNullOrEmpty(list.FirstHalfLink))
+                                {
+                                    <span role="button">@Html.ActionLink("上半场", "LinkPage", "Home", new {url = @list.FirstHalfLink}, null)</span>
+                                }
+                                if (!string.IsNullOrEmpty(list.SecondHalfLink))
+                                {
+                                    <span role="button">@Html.ActionLink("下半场", "LinkPage", "Home", new {url = @list.SecondHalfLink}, null)</span>
+                                }
                             }
-                             if (!string.IsNullOrEmpty(list.FirstHalfLink))
-                             {
-                                 <span role="button">@Html.ActionLink("1st Half", "LinkPage", "Home", new {url = @list.FirstHalfLink}, null)</span>
-                             }
-                            if (!string.IsNullOrEmpty(list.SecondHalfLink))
+                            else
                             {
-                                <span role="button">@Html.ActionLink("2nd Half", "LinkPage", "Home", new {url = @list.SecondHalfLink}, null)</span>
-                        }
-                           
+                                <span data-ui-modal="#quickviewModal" class="btn quickView" role="button">@Html.ActionLink("Match HighLight", "LinkPage", "Home", new { url = @list.HighLightLink }, null)</span>
+                                if (!string.IsNullOrEmpty(list.HighLightLink)&& Request.Browser.IsMobileDevice)
+                                {
+                                    <span  role="button">@Html.ActionLink("HighLight", "LinkPage", "Home", new {url = @list.HighLightLink}, null)</span>
+                                }
+                                if (!string.IsNullOrEmpty(list.FirstHalfLink))
+                                {
+                                    <span role="button">@Html.ActionLink("1st Half", "LinkPage", "Home", new {url = @list.FirstHalfLink}, null)</span>
+                                }
+                                if (!string.IsNullOrEmpty(list.SecondHalfLink))
+                                {
+                                    <span role="button">@Html.ActionLink("2nd Half", "LinkPage", "Home", new {url = @list.SecondHalfLink}, null)</span>
+                                }
+                            }
+
                         }
                         else
                         {
