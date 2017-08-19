@@ -6,7 +6,6 @@
 
     @Styles.Render("~/Content/eplcss")
     @Styles.Render("~/Content/badge-abbreviations.css")
-
 </head>
 
 <meta name="referrer" content="no-referrer" />
@@ -42,6 +41,10 @@
                                 </span>
                             </a>
                             <span data-ui-modal="#quickviewModal" class="btn quickView" role="button">@Html.ActionLink("Match HighLight", "LinkPage", "Home", new { url = @list.HighLightLink }, null)</span>
+                            if (!string.IsNullOrEmpty(list.HighLightLink)&& Request.Browser.IsMobileDevice)
+                            {
+                                <span  role="button">@Html.ActionLink("HighLight", "LinkPage", "Home", new {url = @list.HighLightLink}, null)</span>
+                            }
                              if (!string.IsNullOrEmpty(list.FirstHalfLink))
                              {
                                  <span role="button">@Html.ActionLink("1st Half", "LinkPage", "Home", new {url = @list.FirstHalfLink}, null)</span>
@@ -49,7 +52,8 @@
                             if (!string.IsNullOrEmpty(list.SecondHalfLink))
                             {
                                 <span role="button">@Html.ActionLink("2nd Half", "LinkPage", "Home", new {url = @list.SecondHalfLink}, null)</span>
-                            }
+                        }
+                           
                         }
                         else
                         {
