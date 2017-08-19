@@ -36,16 +36,34 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            @Html.ActionLink("Watch EPL Live", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
         </div>
+    @if (HttpContext.Current.Request.UserLanguages != null && HttpContext.Current.Request.UserLanguages[0].ToLower() == "zh-cn")
+    {
+        @Html.ActionLink("Watch EPL Live", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Match Videos & HighLights", "Videos", "Home")</li>
+                <li>@Html.ActionLink("比赛直播", "Index", "Home")<li>
+                <li>@Html.ActionLink("视频&精华", "Videos", "Home", new {area = ""}, new {@class = "navbar-brand"})</li>
+                <li>@Html.ActionLink("CCTV 5", "About", "Home")</li>
+                <li><a data-template-rendered="" href=@Html.Raw("http://hpjav.co")>电影</a></li>
+                <li>@Html.ActionLink("聊天室", "Chat", "Home")</li>
+            </ul>
+        </div>
+    }
+    else
+    {
+        @Html.ActionLink("Watch EPL Live", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Schedule", "Index", "Home")<li>
+                <li>@Html.ActionLink("Match Videos & HighLights", "Videos", "Home", new {area = ""}, new {@class = "navbar-brand"})</li>
                 <li>@Html.ActionLink("CCTV 5", "About", "Home")</li>
                 <li><a data-template-rendered="" href=@Html.Raw("http://hpjav.co")>Movies</a></li>
                 <li>@Html.ActionLink("Chat Room", "Chat", "Home")</li>
             </ul>
         </div>
+    }
+
     </div>
 </div>
 <div class="container body-content">

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Web;
 using EPL.DataModel;
 using EPL.ViewModels;
 
@@ -23,13 +24,17 @@ namespace EPL.Service
                 //            dfi.FirstDayOfWeek) != cal.GetWeekOfYear(DateTime.Today.AddDays(1), dfi.CalendarWeekRule,
                 //            dfi.FirstDayOfWeek)) continue;
                 //}
+
+                string[] languages = HttpContext.Current.Request.UserLanguages;
+                string chosenLanguage = languages[0];
+                bool isChinese = chosenLanguage.ToLower() =="zh-cn";
                 var viewmodel = new ScheduleViewModel
                 {
                     Id = schedule.Id,
                     Homeid = schedule.Homeid,
                     Awayid = schedule.Awayid,
-                    HomeTeam = schedule.HomeTeam,
-                    AwayTeam = schedule.AwayTeam,
+                    HomeTeam = !isChinese?schedule.HomeTeam: schedule.HomeTeamCn,
+                    AwayTeam = !isChinese?schedule.AwayTeam: schedule.AwayTeamCn,
                     Time = schedule.Time,
                     Link = schedule.Link,
                     Stadium = schedule.Stadium,
