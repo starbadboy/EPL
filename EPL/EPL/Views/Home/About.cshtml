@@ -3,10 +3,56 @@
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>*@
+<head>
+    <script>
 
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+    <style>
+     
+
+        .overlay {
+            position:fixed;
+            top: 50%;
+            left: 50%;
+            width:250px;
+            height:250px;
+            margin-top: -125px; /*set to a negative number 1/2 of your height*/
+            margin-left: -125px; /*set to a negative number 1/2 of your width*/
+            background-color: rgba(0,0,0,0.5);
+            cursor: pointer;
+            z-index: 99
+        }
+        .overlay .closebtn {
+            position: absolute;
+            top: 15px;
+            right: 30px;
+            font-size: 30px;
+        }
+    </style>
+</head>
 <body>
-<div style="margin-top: -100px" >
-    <iframe src="http://tv-live.in/wp-content/uploads/tv-online/Channel/China/kenh/CCtv-5.html" width="800" height="750" scrolling="no" frameborder="0"></iframe>
+<div id="overlay" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="off()">&times;</a>
+
+    <script type="text/javascript">
+        var ad_idzone = "2739748",
+            ad_width = "250",
+            ad_height = "250";
+    </script>
+    <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
+    <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2739748" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2739748&output=img&type=250x250" width="250" height="250"></a></noscript>
+</div>
+    
+<script type="text/javascript">
+    document.getElementById("overlay").style.display = "block";
+</script>
+
+<div>
+    <iframe src="http://101sportz.com/hd1.html" style="border: 0; position: absolute; top: 50px; left: 0; right: 0; bottom: 0; width: 100%; height: 100%" target="_self" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
 </div>
 @*<iframe width="560" height="315" src="http://nba.tmiaoo.com/n/100209800/p.html" frameborder="0" allowfullscreen></iframe>*@
 </body>
