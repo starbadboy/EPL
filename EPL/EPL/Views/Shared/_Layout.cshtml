@@ -17,17 +17,8 @@
 
     </script>
     <meta name="exoclick-site-verification" content="708e59aa711cc98794f7b3117e88c481">
-
 </head>
 <body>
-    <script type="text/javascript">
-    var ad_idzone = "2701390",
-        ad_frequency_period = 1,
-        ad_frequency_count = 1;
-    </script>
-<script type="text/javascript" src="https://ads.exdynsrv.com/popunder1000.js"></script>
-    
-<script type="text/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=2730554"></script>
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -39,27 +30,23 @@
         </div>
     @if (HttpContext.Current.Request.UserLanguages != null && HttpContext.Current.Request.UserLanguages[0].ToLower() == "zh-cn")
     {
-        @Html.ActionLink("Watch EPL Live", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
+        @Html.ActionLink("比赛集锦", "Videos", "Home", new {area = ""}, new {@class = "navbar-brand"})
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>@Html.ActionLink("比赛直播", "Index", "Home")<li>
-                <li>@Html.ActionLink("视频&集锦", "Videos", "Home", new {area = ""}, new {@class = "navbar-brand"})</li>
-                <li>@Html.ActionLink("CCTV 5", "About", "Home")</li>
+                <li>@Html.ActionLink("视频&集锦", "Videos", "Home")</li>
                 <li><a data-template-rendered="" href=@Html.Raw("http://hpjav.co")>电影</a></li>
-                <li>@Html.ActionLink("聊天室", "Chat", "Home")</li>
             </ul>
         </div>
     }
     else
     {
-        @Html.ActionLink("Watch EPL Live", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
+        @Html.ActionLink("Watch EPL HighLights", "Videos", "Home", new {area = ""}, new {@class = "navbar-brand"})
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>@Html.ActionLink("Schedule", "Index", "Home")<li>
-                <li>@Html.ActionLink("Match Videos & HighLights", "Videos", "Home", new {area = ""}, new {@class = "navbar-brand"})</li>
-                <li>@Html.ActionLink("CCTV 5", "About", "Home")</li>
-                <li><a data-template-rendered="" href=@Html.Raw("http://hpjav.co")>Movies</a></li>
-                <li>@Html.ActionLink("Chat Room", "Chat", "Home")</li>
+                <li>@Html.ActionLink("Match HighLights", "Videos", "Home")</li>
+                <li><a data-template-rendered="" href=@Html.Raw("http://hpjav.co")>Movies</a></li>z
             </ul>
         </div>
     }
@@ -72,6 +59,14 @@
     <footer>
         <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
     </footer>
+    <script type="text/javascript">
+        var ad_idzone = "2701390",
+            ad_frequency_period = 1,
+            ad_frequency_count = 1;
+    </script>
+    <script type="text/javascript" src="https://ads.exdynsrv.com/popunder1000.js"></script>
+    
+    <script type="text/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=2730554"></script>
     <script type="text/javascript">
         var ad_idzone = "2730660",
             ad_width = "728",
