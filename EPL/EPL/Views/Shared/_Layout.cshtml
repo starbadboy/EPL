@@ -27,10 +27,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            @Html.ActionLink("Watch EPL HighLights", "Videos", "Home", new { area = "" }, new { @class = "navbar-brand" })
         </div>
     @if (HttpContext.Current.Request.UserLanguages != null && HttpContext.Current.Request.UserLanguages[0].ToLower() == "zh-cn")
     {
-        @Html.ActionLink("比赛集锦", "Videos", "Home", new {area = ""}, new {@class = "navbar-brand"})
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>@Html.ActionLink("比赛直播", "Index", "Home")<li>
@@ -42,12 +42,13 @@
     }
     else
     {
-        @Html.ActionLink("Watch EPL HighLights", "Videos", "Home", new {area = ""}, new {@class = "navbar-brand"})
+        
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>@Html.ActionLink("Schedule", "Index", "Home")<li>  
                 <li>@Html.ActionLink("English HD Live", "About", "Home")</li>
                 <li>@Html.ActionLink("Match HighLights", "Videos", "Home")</li>
+                <li>@Html.ActionLink("TV", "TvShow", "Home")</li>
             </ul>
         </div>
     }
