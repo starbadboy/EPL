@@ -14,6 +14,7 @@
     <script>
 
         function off() {
+            document.getElementById("outerbox").style.display = "none";
             document.getElementById("overlay").style.display = "none";
         }
     </script>
@@ -21,7 +22,27 @@
     <style>
      
 
-        .overlay {
+        .outter {
+            position:fixed;
+            top: 50%;
+            left: 50%;
+            width:800px;
+            height:800px;
+            margin-top: -400px; /*set to a negative number 1/2 of your height*/
+            margin-left: -400px; /*set to a negative number 1/2 of your width*/
+            background-color: rgba(0,0,0,0.01);
+            cursor: pointer;
+            z-index: 9
+        }
+
+        .outter .closebtn {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 20px;
+        }
+
+        .overlay { 
             position:fixed;
             top: 50%;
             left: 50%;
@@ -33,6 +54,7 @@
             cursor: pointer;
             z-index: 99
         }
+
         .overlay .closebtn {
             position: absolute;
             top: 15px;
@@ -43,17 +65,17 @@
 
 </head>
 <body>
-  
-<div id="overlay" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="off()">&times;</a>
-
-    <script type="text/javascript">
-        var ad_idzone = "2739746",
-            ad_width = "250",
-            ad_height = "250";
-    </script>
-    <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-    <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2739746" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2739746&output=img&type=250x250" width="250" height="250"></a></noscript>
+<div id="outerbox" class="outter">
+  <a href="javascript:void(0)" class="closebtn" onclick="off()">&times;</a>
+    <div id="overlay" class="overlay" onclick="off()">
+        <script type="text/javascript">
+            var ad_idzone = "2739746",
+                ad_width = "250",
+                ad_height = "250";
+        </script>
+        <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
+        <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2739746" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2739746&output=img&type=250x250" width="250" height="250"></a></noscript>
+    </div>
 </div>
     
 <script type="text/javascript">
@@ -83,6 +105,7 @@
         ad_width = "468",
         ad_height = "60";
 </script>
+<div style="display: none">
 <script type="text/javascript">
     var ad_idzone = "2730664",
         ad_width = "728",
@@ -92,4 +115,5 @@
 <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2730664" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2730664&output=img&type=728x90" width="728" height="90"></a></noscript>
 <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
 <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2730662" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2730662&output=img&type=468x60" width="468" height="60"></a></noscript>
+</div>
 </body>
