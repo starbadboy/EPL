@@ -218,10 +218,12 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DataModel\Schedule.cs" />
+    <Compile Include="DataModel\TvShow.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Service\ScheduleService.cs" />
+    <Compile Include="Service\TvShowService.cs" />
     <Compile Include="ViewModels\AccountViewModels.cs" />
     <Compile Include="ViewModels\IdentityModels.cs" />
     <Compile Include="ViewModels\ManageViewModels.cs" />
@@ -229,12 +231,15 @@
     <Compile Include="Repository\EplRepo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\ScheduleViewModelCollection.cs" />
+    <Compile Include="ViewModels\TvShowViewModelCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\badge-abbreviations.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\epl.css" />
+    <Content Include="Content\screen.css" />
+    <Content Include="Image\1.jpg" />
     <Content Include="Image\badges-25-sprite%40x2.png" />
     <Content Include="Image\badges-25-sprite.png" />
     <Content Include="Image\badges-50-sprite.png" />
@@ -303,7 +308,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\AddSchedule.cshtml" />
     <Content Include="Views\Home\LinkPage.cshtml" />
-    <Content Include="Views\Home\Chat.cshtml" />
+    <Content Include="Views\Home\TvShow.cshtml" />
     <Content Include="Views\Home\Donate.cshtml" />
     <Content Include="Views\Home\Videos.cshtml" />
     <Content Include="Views\Home\VideoPage.cshtml" />

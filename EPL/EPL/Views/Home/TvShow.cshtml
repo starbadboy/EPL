@@ -1,0 +1,864 @@
+﻿@model EPL.ViewModels.TvShowViewModelCollection
+<head>
+    @Styles.Render("~/Content/screen.css")
+</head>
+<body>
+<div class="wrapper col-12">
+@foreach (var keyvaluePair in Model.Collection)
+{
+        <section class="mainWidget thumbnailList " data-script="pl_editorial-lists" data-widget="video-list">
+            <header>                
+                <h3 class="subHeader">@Html.Raw(keyvaluePair.Key)</h3>
+            </header>
+            <ul class="block-list-4">
+            @foreach (var list in keyvaluePair.Value)
+            {
+                <li data-ui-modal="#videoPlayer"  data-modal-active="true">
+                    <a href="@Url.Action("LinkPage", "Home", new {url = @list.VideoLink}, null)" class="thumbnail videoThumb">
+                        <figure>
+                            <span class="image thumbCrop-video-small">
+                                <img src="@Html.Raw(list.Image)" alt="">
+                                <span class="runTime">
+                                    <time datetime="PT2M59S"> <!-- TO-TRANSLATE -->
+                                        @Html.Raw(list.Episode)
+                                    </time>
+                                    <span class="audioDesc">HD</span>
+                                </span>
+                            </span>
+                            <figcaption>
+                                <span class="title">@Html.Raw(list.VideoTitle)</span>
+                                <time class="published">>@Html.Raw(list.ModifiedDate)</time>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            }
+            </ul>
+
+            <a class="btn moreBtn" href="/video/latest">More Latest Videos<span class="visuallyHidden">: Latest Videos</span><span class="icn arrow-right"></span></a>
+        </section>
+}
+
+
+
+
+
+@*<section class="mainWidget thumbnailList " data-script="pl_editorial-lists" data-widget="video-list">
+    <header>
+        <h3 class="subHeader">Goal of the day</h3>
+    </header>
+
+
+
+    <ul class="block-list-4">
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 457320, &quot;mediaId&quot;:5546321659001, &quot;mediaTitle&quot;:&quot;Goal of the day: Kilbane leaves Saints in a spin&quot;, &quot;mediaDescription&quot;:&quot;Watch the Sunderland winger score an outrageous overhead kick&quot;, &quot;mediaDate&quot;:&quot;21/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/20/4b102524-89e1-460c-ad9a-451ba47f949c/2001-04-28T000000Z_1_MT1ACI325786_RTRMADP_3_SPORT.JPG&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                00:28
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Goal of the day: Kilbane leaves Saints in a spin</span>
+                        <time class="published">21/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 454029, &quot;mediaId&quot;:5544642424001, &quot;mediaTitle&quot;:&quot;Goal of the day: Howson's half-volley&quot;, &quot;mediaDescription&quot;:&quot;The Norwich City midfielder stunned Stoke City in January 2016&quot;, &quot;mediaDate&quot;:&quot;20/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/18/10dc2cbe-a3aa-4ffb-8620-32339ee41135/GettyImages-504806524.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                00:31
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Goal of the day: Howson's half-volley</span>
+                        <time class="published">20/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 452661, &quot;mediaId&quot;:5540722267001, &quot;mediaTitle&quot;:&quot;Goal of the day: 'Breathtakingly brilliant from Yeboah'&quot;, &quot;mediaDescription&quot;:&quot;Sit back and enjoy an astonishing half-volley from Tony Yeboah at Leeds&quot;, &quot;mediaDate&quot;:&quot;19/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/16/c4d5b7a3-953d-49f1-b028-ff0bb6d0c911/GettyImages-1211943.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                00:38
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Goal of the day: 'Breathtakingly brilliant from Yeboah'</span>
+                        <time class="published">19/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 452663, &quot;mediaId&quot;:5540724286001, &quot;mediaTitle&quot;:&quot;Goal of the day: Brady nets on Burnley bow&quot;, &quot;mediaDescription&quot;:&quot;Robbie Brady scored a free-kick v Chelsea in his first Turf Moor match for Burnley&quot;, &quot;mediaDate&quot;:&quot;18/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/16/69ffc9e6-4df7-4636-8ae8-4fe25cf05ab0/GettyImages-634900076.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                00:34
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Goal of the day: Brady nets on Burnley bow</span>
+                        <time class="published">18/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 452665, &quot;mediaId&quot;:5540715438001, &quot;mediaTitle&quot;:&quot;Goal of the day: 'Di Canio's scored a beauty'&quot;, &quot;mediaDescription&quot;:&quot;Watch one of the great Premier League goals, the Italian's scissor kick for West Ham&quot;, &quot;mediaDate&quot;:&quot;17/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/16/996962cd-9b47-4f22-8f79-d23e731db082/2000-03-26T000000Z_1_MT1ACI1746946_RTRMADP_3_SPORT.JPG&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                00:31
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Goal of the day: 'Di Canio's scored a beauty'</span>
+                        <time class="published">17/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 452658, &quot;mediaId&quot;:5540710412001, &quot;mediaTitle&quot;:&quot;Goal of the day: Dzeko leaves Spurs reeling&quot;, &quot;mediaDescription&quot;:&quot;Edin Dzeko scored a stunning goal to seal a 5-1 win for Man City in 2011&quot;, &quot;mediaDate&quot;:&quot;16/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/15/d8df4503-dc11-43e2-a765-ef41736d6be7/GettyImages-122391265.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                00:31
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Goal of the day: Dzeko leaves Spurs reeling</span>
+                        <time class="published">16/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 452659, &quot;mediaId&quot;:5540724285001, &quot;mediaTitle&quot;:&quot;Goal of the day: Holdsworth hammers home&quot;, &quot;mediaDescription&quot;:&quot;Enjoy an unstoppable effort from the Wimbledon striker in 1994/95&quot;, &quot;mediaDate&quot;:&quot;15/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/14/2a45733e-3d4c-464f-98de-55d777a7d50a/1996-12-14T000000Z_1_MT1ACI114117_RTRMADP_3_SPORT.JPG&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                00:27
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Goal of the day: Holdsworth hammers home</span>
+                        <time class="published">15/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 449153, &quot;mediaId&quot;:5539029255001, &quot;mediaTitle&quot;:&quot;Goal of the day: Remy rifles in for QPR&quot;, &quot;mediaDescription&quot;:&quot;Enjoy a sensational counter-attacking goal from Loic Remy&quot;, &quot;mediaDate&quot;:&quot;14/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/11/88b384db-d1f1-4d45-91e6-892eebd111e0/GettyImages-165948290.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                00:31
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Goal of the day: Remy rifles in for QPR</span>
+                        <time class="published">14/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+    </ul>
+
+    <a class="btn moreBtn" href="/video/latest?term=Goal%20of%20the%20day">More Goal of the Day Videos<span class="visuallyHidden">: Goal of the day</span><span class="icn arrow-right"></span></a>
+</section>
+
+
+
+
+
+<section class="mainWidget thumbnailList " data-script="pl_editorial-lists" data-widget="video-list">
+    <header>
+        <h3 class="subHeader">Fantasy Premier League Videos</h3>
+    </header>
+
+
+
+    <ul class="block-list-4">
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 457872, &quot;mediaId&quot;:5546838071001, &quot;mediaTitle&quot;:&quot;FPL Daily Update: GW2 #6&quot;, &quot;mediaDescription&quot;:&quot;Marcos Alonso showed his value with a two-goal display, says Danny Jamieson&quot;, &quot;mediaDate&quot;:&quot;21/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/21/4216bb82-fd0d-455b-b6ab-844c74be779d/LITnyPCi.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                01:49
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">FPL Daily Update: GW2 #6</span>
+                        <time class="published">21/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 453472, &quot;mediaId&quot;:5543602964001, &quot;mediaTitle&quot;:&quot;FPL Gameweek 2: Ones to watch&quot;, &quot;mediaDescription&quot;:&quot;Marcus Rashford is among The Scout's five standout picks for this weekend&quot;, &quot;mediaDate&quot;:&quot;19/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/14/d8c4a52c-0fe5-4aba-8835-bc7ba04dce74/831268036.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                01:17
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">FPL Gameweek 2: Ones to watch</span>
+                        <time class="published">19/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 453640, &quot;mediaId&quot;:5543728651001, &quot;mediaTitle&quot;:&quot;FPL Gameweek 2 differentials&quot;, &quot;mediaDescription&quot;:&quot;Can this quartet sneak under the radar and claim Fantasy big points?&quot;, &quot;mediaDate&quot;:&quot;19/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/14/2d978e0b-2364-423b-a533-2b738efeb876/831204468.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                00:58
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">FPL Gameweek 2 differentials</span>
+                        <time class="published">19/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 454060, &quot;mediaId&quot;:5544659393001, &quot;mediaTitle&quot;:&quot;FPL Daily Update: GW2 #5&quot;, &quot;mediaDescription&quot;:&quot;Who should we captain this weekend? Kelly Somers has three candidates&quot;, &quot;mediaDate&quot;:&quot;18/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/18/980fbc2d-e1a7-4a0a-9181-4f33c0e8cbeb/DailyUpdate.PNG&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                01:50
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">FPL Daily Update: GW2 #5</span>
+                        <time class="published">18/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 453936, &quot;mediaId&quot;:5544203118001, &quot;mediaTitle&quot;:&quot;FPL Show, Ep 2: Forward thinking&quot;, &quot;mediaDescription&quot;:&quot;Mark reveals how to use a 'mini-Wildcard' without using your real one&quot;, &quot;mediaDate&quot;:&quot;18/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/17/a9deb5de-ee2a-4bbc-87b6-d3c27594e632/XePQiZaJ.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                02:58
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">FPL Show, Ep 2: Forward thinking</span>
+                        <time class="published">18/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 453938, &quot;mediaId&quot;:5544211300001, &quot;mediaTitle&quot;:&quot;FPL Show, Ep 2: State of Play&quot;, &quot;mediaDescription&quot;:&quot;Who should FPL managers replace Gary Cahill and Wilfried Zaha with? Find out here&quot;, &quot;mediaDate&quot;:&quot;18/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/17/5b3ac300-31a2-4265-b22d-f8763487eb58/LOZvWYCo.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                03:00
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">FPL Show, Ep 2: State of Play</span>
+                        <time class="published">18/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 453942, &quot;mediaId&quot;:5544211339001, &quot;mediaTitle&quot;:&quot;FPL Show, Ep 2: Liverpool pointers&quot;, &quot;mediaDescription&quot;:&quot;What did GW1 teach us about which Reds to select for FPL? Mark did warn us...&quot;, &quot;mediaDate&quot;:&quot;18/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/17/37861152-9534-4f92-b700-8f49b764cf91/HONRCVOs.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                02:35
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">FPL Show, Ep 2: Liverpool pointers</span>
+                        <time class="published">18/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 453932, &quot;mediaId&quot;:5544195669001, &quot;mediaTitle&quot;:&quot;FPL Show, Ep. 2: Player Stats&quot;, &quot;mediaDescription&quot;:&quot;Jules Breach runs the rule over the headline-makers from Gameweek 1&quot;, &quot;mediaDate&quot;:&quot;18/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/17/d5f3768d-c4b3-41ad-8e64-2cd480fc5277/nGeUFNbk.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                01:20
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">FPL Show, Ep. 2: Player Stats</span>
+                        <time class="published">18/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+    </ul>
+
+    <a class="btn moreBtn" href="/video/latest?term=FPL">More FPL Videos<span class="visuallyHidden">: Fantasy Premier League Videos</span><span class="icn arrow-right"></span></a>
+</section>
+
+
+
+
+
+<section class="mainWidget thumbnailList " data-script="pl_editorial-lists" data-widget="video-list">
+    <header>
+        <h3 class="subHeader">Iconic Moments</h3>
+    </header>
+
+
+
+    <ul class="block-list-4">
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 453613, &quot;mediaId&quot;:5543720330001, &quot;mediaTitle&quot;:&quot;Iconic Moment: Fulham's first PL win over Chelsea&quot;, &quot;mediaDescription&quot;:&quot;Luis Boa Morte scored the only goal in a famous victory at Craven Cottage&quot;, &quot;mediaDate&quot;:&quot;20/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/17/dd6aa3c3-9b36-4dd1-b8e1-e43169ba70ee/2006-03-19T000000Z_1_MT1ACI3450756_RTRMADP_3_SOCCER-ENGLAND-FUL-CHE.JPG&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                01:19
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Iconic Moment: Fulham's first PL win over Chelsea</span>
+                        <time class="published">20/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 453023, &quot;mediaId&quot;:5541780028001, &quot;mediaTitle&quot;:&quot;Iconic Moment: Kane claims another Golden Boot&quot;, &quot;mediaDescription&quot;:&quot;Spurs striker scored three in a 7-1 win at Hull to finish 2016/17 on 29 goals&quot;, &quot;mediaDate&quot;:&quot;19/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/06/16/153c42fe-363b-4f7e-b371-a47049a5b6c2/Harry-Kane-Tottenham-Hotspur.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                01:16
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Iconic Moment: Kane claims another Golden Boot</span>
+                        <time class="published">19/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 453611, &quot;mediaId&quot;:5543715313001, &quot;mediaTitle&quot;:&quot;Iconic Moment: Shearer's second Golden Boot&quot;, &quot;mediaDescription&quot;:&quot;In 1996/97, Alan Shearer became the first PL top scorer for two different clubs&quot;, &quot;mediaDate&quot;:&quot;18/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/17/5a77e414-6c29-499c-83d3-77e18cb22b3b/GettyImages-1619534.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                01:21
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Iconic Moment: Shearer's second Golden Boot</span>
+                        <time class="published">18/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 452948, &quot;mediaId&quot;:5541605067001, &quot;mediaTitle&quot;:&quot;Iconic Moment: Bentley's treble against Man Utd&quot;, &quot;mediaDescription&quot;:&quot;Blackburn's David Bentley netted the first PL hat-trick versus the Red Devils&quot;, &quot;mediaDate&quot;:&quot;17/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/16/b3544498-ef33-43e7-afa6-d7dfcfc30304/GettyImages-56718520.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                01:13
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Iconic Moment: Bentley's treble against Man Utd</span>
+                        <time class="published">17/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+    </ul>
+
+    <a class="btn moreBtn" href="/video/latest?term=Iconic%20Moment">More Iconic Moments Videos<span class="visuallyHidden">: Iconic Moments</span><span class="icn arrow-right"></span></a>
+</section>
+
+
+
+
+
+<section class="mainWidget thumbnailList " data-script="pl_editorial-lists" data-widget="video-list">
+    <header>
+        <h3 class="subHeader">Premier League Debuts</h3>
+    </header>
+
+
+
+    <ul class="block-list-4">
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 379423, &quot;mediaId&quot;:5415050572001, &quot;mediaTitle&quot;:&quot;My Premier League Debut: Geoff Cameron&quot;, &quot;mediaDescription&quot;:&quot;I had to pinch myself. US international on his bow for Stoke against Arsenal&quot;, &quot;mediaDate&quot;:&quot;04/7/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/04/28/ed3c083c-19d1-4f8f-bcdf-7ea6cee6ca6f/GettyImages-150798156.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                01:09
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">My Premier League Debut: Geoff Cameron</span>
+                        <time class="published">04/7/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 423500, &quot;mediaId&quot;:5483386970001, &quot;mediaTitle&quot;:&quot;My Premier League debut: Adam Smith&quot;, &quot;mediaDescription&quot;:&quot;AFC Bournemouth defender helped Spurs clinch fourth place in his first PL match&quot;, &quot;mediaDate&quot;:&quot;26/6/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/06/26/cd65c517-afba-48fd-a90f-c9417840c427/2012-05-13T000000Z_1_MT1ACI9469815_RTRMADP_3_SOCCER-ENGLAND-TOT-FUL.JPG&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                00:45
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">My Premier League debut: Adam Smith</span>
+                        <time class="published">26/6/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 353939, &quot;mediaId&quot;:5365625949001, &quot;mediaTitle&quot;:&quot;My Premier League Debut: Cesc Fabregas&quot;, &quot;mediaDescription&quot;:&quot;Midfielder was just a 17-year-old when he helped Arsenal win at Everton&quot;, &quot;mediaDate&quot;:&quot;24/6/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/03/20/5a1e58eb-3fac-45a8-a9bb-504aa0c2036d/GettyImages-51181800.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                00:44
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">My Premier League Debut: Cesc Fabregas</span>
+                        <time class="published">24/6/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 420656, &quot;mediaId&quot;:5474103220001, &quot;mediaTitle&quot;:&quot;My Premier League debut: Sofiane Boufal&quot;, &quot;mediaDescription&quot;:&quot;Skilful Southampton playmaker's first match was at Pep Guardiola's Man City&quot;, &quot;mediaDate&quot;:&quot;22/6/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2016/10/23/391b28a3-d247-4409-92ad-fefea2a6414a/2016-10-23T140003Z_120232803_MT1ACI14649838_RTRMADP_3_SOCCER-ENGLAND-MCI-SOU.JPG&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                01:04
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">My Premier League debut: Sofiane Boufal</span>
+                        <time class="published">22/6/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+    </ul>
+
+    <a class="btn moreBtn" href="/video/latest?term=PL%20Debut">More PL Debut Videos<span class="visuallyHidden">: Premier League Debuts</span><span class="icn arrow-right"></span></a>
+</section>
+
+
+
+
+
+<section class="mainWidget thumbnailList " data-script="pl_editorial-lists" data-widget="video-list">
+    <header>
+        <h3 class="subHeader">Communities Videos</h3>
+    </header>
+
+
+
+    <ul class="block-list-4">
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 456827, &quot;mediaId&quot;:5546216704001, &quot;mediaTitle&quot;:&quot;BBC MOTD: Saints and Big Issue team up to brighten futures&quot;, &quot;mediaDescription&quot;:&quot;Find out with Match of the Day how Southampton and Big Issue are helping the homeless&quot;, &quot;mediaDate&quot;:&quot;21/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/10/98a808ab-1ae3-4a5f-ae27-6b3fbeb3f739/Social-3.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                02:52
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">BBC MOTD: Saints and Big Issue team up to brighten futures</span>
+                        <time class="published">21/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 453278, &quot;mediaId&quot;:5542607676001, &quot;mediaTitle&quot;:&quot;Nathan's story at the Arsenal Foundation&quot;, &quot;mediaDescription&quot;:&quot;Homeless and devoid of inspiration, Nathan turned to Arsenal and changed his life&quot;, &quot;mediaDate&quot;:&quot;17/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/16/178ebc3f-e244-4a5c-86fc-c3f7e05ec1dd/KYaVnPWd.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                03:01
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Nathan's story at the Arsenal Foundation</span>
+                        <time class="published">17/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 452545, &quot;mediaId&quot;:5540569444001, &quot;mediaTitle&quot;:&quot;Rosenior impressed with Brighton's disability work&quot;, &quot;mediaDescription&quot;:&quot;Seagulls defender joins Down's syndrome football session. Courtesy: BBC Match of the Day&quot;, &quot;mediaDate&quot;:&quot;15/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/14/6b958600-b5f7-484a-8f35-d3c741216169/AITC-on-Match-of-the-Day.JPG&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                02:48
+                            </time>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Rosenior impressed with Brighton's disability work</span>
+                        <time class="published">15/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 446199, &quot;mediaId&quot;:5534057466001, &quot;mediaTitle&quot;:&quot;PL Primary Stars: Adam and Man City&quot;, &quot;mediaDescription&quot;:&quot;How City in the Community has helped one teacher prepare engaging PE lessons&quot;, &quot;mediaDate&quot;:&quot;07/8/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/08/07/ca31b8a7-5dfb-412a-91b0-a74cf21d028a/Adam-PL-Primary-Stars-Manchester-City.JPG&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                02:12
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">PL Primary Stars: Adam and Man City</span>
+                        <time class="published">07/8/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 409381, &quot;mediaId&quot;:5462883865001, &quot;mediaTitle&quot;:&quot;Leicester City Premier League Kicks Hero&quot;, &quot;mediaDescription&quot;:&quot;Learn how Riyad Mahrez was inspired by Marriam's story&quot;, &quot;mediaDate&quot;:&quot;24/7/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/05/12/fdde839d-c11e-4e57-984d-74f3c5ff5ab4/LC8086-025.JPG&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                02:48
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Leicester City Premier League Kicks Hero</span>
+                        <time class="published">24/7/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 409398, &quot;mediaId&quot;:5462883870001, &quot;mediaTitle&quot;:&quot;Inspiring disability sport: Paul's story&quot;, &quot;mediaDescription&quot;:&quot;How The Albion Foundation's disability work is connecting communities&quot;, &quot;mediaDate&quot;:&quot;21/7/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/06/09/0a25a3d3-6b5c-4834-a9e9-64f046f10955/Lead-photo.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                04:14
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Inspiring disability sport: Paul's story</span>
+                        <time class="published">21/7/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 409372, &quot;mediaId&quot;:5462881656001, &quot;mediaTitle&quot;:&quot;Everyone is welcome: Accessible stadiums&quot;, &quot;mediaDescription&quot;:&quot;Take a tour of the new Watford FC Sensory Room&quot;, &quot;mediaDate&quot;:&quot;20/7/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/06/16/0f2c7b76-2a50-4ded-8787-843eea76d19a/Watford-sensory-room.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                01:30
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Everyone is welcome: Accessible stadiums</span>
+                        <time class="published">20/7/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+
+        <li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 409383, &quot;mediaId&quot;:5462883862001, &quot;mediaTitle&quot;:&quot;Premier League Primary Stars: Dylan's story&quot;, &quot;mediaDescription&quot;:&quot;How Southampton FC helped one pupil get excited about school work&quot;, &quot;mediaDate&quot;:&quot;20/7/2017&quot;}" data-modal-active="true">
+            <a href="#!" class="thumbnail videoThumb">
+                <figure>
+                    <span class="image thumbCrop-video-small">
+
+                        <img src="            https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2017/06/16/c0aa051e-63f1-455f-b413-47c85827d71a/Primary-Stars-.jpg&#10;" alt="">
+                        <span class="runTime">
+                            <span class="icn play"></span>
+                            <time datetime="PT2M59S">        <!-- TO-TRANSLATE -->
+                                02:56
+                            </time>
+                            <span class="audioDesc">AD</span>
+                        </span>
+                    </span>
+                    <figcaption>
+                        <span class="title">Premier League Primary Stars: Dylan's story</span>
+                        <time class="published">20/7/2017</time>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+    </ul>
+
+    <a class="btn moreBtn" href="/video/latest?term=communities">More Communities Videos<span class="visuallyHidden">: Communities Videos</span><span class="icn arrow-right"></span></a>
+</section>*@
+
+
+</div>
+</body>

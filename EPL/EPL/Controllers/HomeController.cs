@@ -55,9 +55,12 @@ namespace EPL.Controllers
             return View();
         }
 
-        public ActionResult Chat()
+        public ActionResult TvShow()
         {
-            return View();
+            var repo = new EplRepo();
+            var tvshows = repo.GetAllTvShows();
+            var viewmodels = new TvShowService().MapToViewModel(tvshows);
+            return View(viewmodels);
         }
 
         public ActionResult Donate()

@@ -49,5 +49,11 @@ namespace EPL.Repository
             _connection.Execute(sql);
             _connection.Close();
         }
+
+        public List<TvShow> GetAllTvShows()
+        {
+            var sql = @"select [Id] ,[Title],[ModifiedOn],[Episode],[Link],[Category] FROM [Tvshow]";
+            return _connection.Query<TvShow>(sql).ToList();
+        }
     }
 }
