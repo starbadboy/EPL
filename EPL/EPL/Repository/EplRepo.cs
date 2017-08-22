@@ -52,7 +52,7 @@ namespace EPL.Repository
 
         public List<TvShow> GetAllTvShows()
         {
-            var sql = @"select [Id] ,[Title],[ModifiedOn],[Episode],[Link],[Category] FROM [Tvshow]";
+            var sql = @"select [Id] ,[Title],[ModifiedOn],[Episode],[Link],[Category] FROM [Tvshow] order by modifiedon desc";
             return _connection.Query<TvShow>(sql).ToList();
         }
     }

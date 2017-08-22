@@ -357,4 +357,3 @@ C:\Git\EPL\EPL\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Git\EPL\EPL\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Git\EPL\EPL\obj\Debug\EPL.dll
 C:\Git\EPL\EPL\obj\Debug\EPL.pdb
-C:\Git\EPL\EPL\obj\Debug\EPL.csprojResolveAssemblyReference.cache
