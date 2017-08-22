@@ -19,29 +19,7 @@
         }
     </script>
 
-    <style>
-     
-
-        .outter {
-            position:fixed;
-            top: 50%;
-            left: 50%;
-            width:800px;
-            height:800px;
-            margin-top: -400px; /*set to a negative number 1/2 of your height*/
-            margin-left: -400px; /*set to a negative number 1/2 of your width*/
-            background-color: rgba(0,0,0,0.01);
-            cursor: pointer;
-            z-index: 9
-        }
-
-        .outter .closebtn {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            font-size: 20px;
-        }
-
+    <style> 
         .overlay { 
             position:fixed;
             top: 50%;
@@ -59,25 +37,24 @@
             position: absolute;
             top: 15px;
             right: 30px;
-            font-size: 10px;
+            font-size: 20px;
         }
     </style>
 
 </head>
 <body>
-<div id="outerbox" class="outter">
-  <a href="javascript:void(0)" class="closebtn" onclick="off()">&times;</a>
-    <div id="overlay" class="overlay" onclick="off()">
-        <script type="text/javascript">
-            var ad_idzone = "2739746",
-                ad_width = "250",
-                ad_height = "250";
-        </script>
-        <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-        <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2739746" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2739746&output=img&type=250x250" width="250" height="250"></a></noscript>
-    </div>
+  
+<div id="overlay" class="overlay" onclick="off()">
+    <a href="javascript:void(0)" class="closebtn" onclick="off()">&times;</a>
+    <script type="text/javascript">
+        var ad_idzone = "2739746",
+            ad_width = "250",
+            ad_height = "250";
+    </script>
+    <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
+    <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2739746" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2739746&output=img&type=250x250" width="250" height="250"></a></noscript>
 </div>
-    
+  
 <script type="text/javascript">
     document.getElementById("overlay").style.display = "block";
 </script>

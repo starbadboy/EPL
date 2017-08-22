@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace EPL.ViewModels
 {
@@ -16,6 +14,6 @@ namespace EPL.ViewModels
         public string ModifiedDate { get; set; }
         public string VideoLink { get; set; }
         public int Id { get; set; }
-        public string Image => "/Image/"+Id+".jpg";
+        public string Image => "/Image/tv/"+Id+".jpg";
     }
 }
