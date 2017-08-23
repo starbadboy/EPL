@@ -239,6 +239,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\epl.css" />
     <Content Include="Content\screen.css" />
+    <Content Include="Image\close.png" />
     <Content Include="Image\tv\1.jpg" />
     <Content Include="Image\badges-25-sprite%40x2.png" />
     <Content Include="Image\badges-25-sprite.png" />
@@ -252,6 +253,8 @@
     <Content Include="Image\pay.png" />
     <Content Include="Image\tv\2.jpg" />
     <Content Include="Image\tv\3.jpg" />
+    <Content Include="Image\tv\4.jpg" />
+    <Content Include="Image\tv\5.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
