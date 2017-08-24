@@ -18,7 +18,12 @@ namespace EPL.Service
                     VideoLink = tvshow.Link,
                     Id = tvshow.Id
                 }).ToList();
-            var dict = new Dictionary<string, List<TvShowViewModel>> {["Lastest Video"] = viewModels};
+
+            var dict = viewModels.GroupBy(x => x.VideoTitle)
+                .ToDictionary(gdc => gdc.Key, gdc => gdc.ToList());
+
+            //var dict = new Dictionary<string, List<TvShowViewModel>> {["Lastest Video"] = viewModels};
+            //var dict = new Dictionary<string, List<TvShowViewModel>> {["Lastest Video"] = viewModels};
             return new TvShowViewModelCollection {Collection = dict};
 
         }

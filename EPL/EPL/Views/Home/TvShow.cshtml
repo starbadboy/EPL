@@ -1,4 +1,7 @@
 ﻿@model EPL.ViewModels.TvShowViewModelCollection
+@{
+    ViewBag.Title = "Tv Shows";
+}
 <head>
     @Styles.Render("~/Content/screen.css")
 </head>
@@ -35,7 +38,7 @@
             }
             </ul>
 
-            <a class="btn moreBtn" href="/video/latest">More Latest Videos<span class="visuallyHidden">: Latest Videos</span><span class="icn arrow-right"></span></a>
+            @*<a class="btn moreBtn" href="/video/latest">More Latest Videos<span class="visuallyHidden">: Latest Videos</span><span class="icn arrow-right"></span></a>*@
         </section>
 }
 
