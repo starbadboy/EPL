@@ -19,7 +19,7 @@ namespace EPL.Controllers
                     Cache.NoSlidingExpiration);
             }
             var schedulers = (List<Schedule>)HttpContext.Cache.Get("schedulers");
-            var showingschedules = schedulers.Where(x => (x.Time - GetGmt8TimeNow()).TotalHours >= -3).ToList();
+            var showingschedules = schedulers.Where(x => (x.Time - GetGmt8TimeNow()).TotalHours >= -2).ToList();
             var viewmodels = new ScheduleService().MapToViewModel(showingschedules);
             return View(viewmodels);
         }
@@ -33,7 +33,7 @@ namespace EPL.Controllers
                     Cache.NoSlidingExpiration);
             }
             var schedulers = (List<Schedule>)HttpContext.Cache.Get("schedulers");
-            var pastMatches = schedulers.Where(x => (x.Time - GetGmt8TimeNow()).TotalHours < -3).ToList();
+            var pastMatches = schedulers.Where(x => (x.Time - GetGmt8TimeNow()).TotalHours < -2).OrderByDescending(x=>x.Time).ToList();
             var viewmodels = new ScheduleService().MapToViewModel(pastMatches.Where(x=>x.Time > new DateTime(1900,1,1)).ToList());
             return View(viewmodels);
         }
