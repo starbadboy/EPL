@@ -25,11 +25,11 @@
 
                     <li class="matchFixtureContainer"
                         data-home=@Html.Raw(list.HomeTeam) data-away=@Html.Raw(list.AwayTeam) data-competition="Premier League"
-                        data-venue=@Html.Raw(list.Stadium) data-comp-match-item="14173" data-comp-match-item-ko="1480768200000"
+                        data-venue=@Html.Raw(list.Stadium) data-comp-match-item=@Html.Raw(list.Id) data-comp-match-item-ko="1480768200000"
                         data-comp-match-item-status="U">
                         @if (!string.IsNullOrEmpty(list.HighLightLink))
                         {
-                            <a data-template-rendered="" href=@Url.Action("LinkPage", "Home", new {url = @list.HighLightLink}, null) class="fixture preMatch" data-matchid="14173">
+                            <a data-template-rendered="" href=@Url.Action("LinkPage", "Home", new {url = @list.HighLightLink}, null) class="fixture preMatch" data-matchid=@Html.Raw(list.Id)>
                                 <span class="overview" >
                                     <span class="teams">
                                         <span class="team"><span class="teamName">@Html.Raw(list.HomeTeam)</span><span class="badge-25 t@(@list.Homeid)"></span></span>
