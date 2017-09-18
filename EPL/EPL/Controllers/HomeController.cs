@@ -73,6 +73,12 @@ namespace EPL.Controllers
             ViewBag.Message = url;
             return View();
         }
+
+        public ActionResult Pending(string url)
+        {
+            ViewBag.Message = url;
+            return View();
+        }
         //public ActionResult Contact()
         //{
         //    ViewBag.Message = "Your contact page.";

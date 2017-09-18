@@ -19,6 +19,7 @@
     <meta name="exoclick-site-verification" content="708e59aa711cc98794f7b3117e88c481">
 </head>
 <body>
+
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -27,31 +28,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            @Html.ActionLink("Watch EPL HighLights", "Videos", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Watch EPL HighLights", "Videos", "Home", new {area = ""}, new {@class = "navbar-brand"})
         </div>
-    @if (HttpContext.Current.Request.UserLanguages != null && HttpContext.Current.Request.UserLanguages[0].ToLower() == "zh-cn")
-    {
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("比赛直播", "Index", "Home")<li>
-                <li>@Html.ActionLink("欧冠小组抽签", "About", "Home")</li>
-                <li>@Html.ActionLink("视频&集锦", "Videos", "Home")</li>
-                <li>@Html.ActionLink("TV", "TvShow", "Home")</li>
-            </ul>
-        </div>
-    }
-    else
-    {
-        
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Schedule", "Index", "Home")<li>  
-                <li>@Html.ActionLink("Champions League", "About", "Home")</li>
-                <li>@Html.ActionLink("Match HighLights", "Videos", "Home")</li>
-                <li>@Html.ActionLink("TV", "TvShow", "Home")</li>
-            </ul>
-        </div>
-    }
+        @if (HttpContext.Current.Request.UserLanguages != null && HttpContext.Current.Request.UserLanguages[0].ToLower() == "zh-cn")
+        {
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("比赛直播", "Index", "Home")<li>
+                    <li>@Html.ActionLink("视频&集锦", "Videos", "Home")</li>
+                    <li>@Html.ActionLink("TV", "TvShow", "Home")</li>
+                </ul>
+            </div>
+        }
+        else
+        {
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Schedule", "Index", "Home")<li>
+                    <li>@Html.ActionLink("Match HighLights", "Videos", "Home")</li>
+                    <li>@Html.ActionLink("TV", "TvShow", "Home")</li>
+                </ul>
+            </div>
+        }
 
     </div>
 </div>
@@ -59,70 +58,70 @@
     @RenderBody()
     <hr/>
 
-<div style="display: none">
-    <script type="text/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=2730554"></script>
-    <script type="text/javascript">
-        var ad_idzone = "2730660",
-            ad_width = "728",
-            ad_height = "90";
-    </script>
-    <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-    <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2730660" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2730660&output=img&type=728x90" width="728" height="90"></a></noscript>
-    <script type="text/javascript">
-        var ad_idzone = "2730662",
-            ad_width = "468",
-            ad_height = "60";
-    </script>
-    <script type="text/javascript">
-        var ad_idzone = "2730664",
-            ad_width = "728",
-            ad_height = "90";
-    </script>
-    <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-    <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2730664" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2730664&output=img&type=728x90" width="728" height="90"></a></noscript>
-    <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-    <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2730662" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2730662&output=img&type=468x60" width="468" height="60"></a></noscript>
-    <script type="text/javascript">
-        var ad_idzone = "2730658",
-            ad_width = "300",
-            ad_height = "250";
-    </script>
-    <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-    <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2730658" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2730658&output=img&type=300x250" width="300" height="250"></a></noscript>
-    <iframe src="//ads.exdynsrv.com/iframe.php?idzone=2743438&size=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-    <iframe src="//ads.exdynsrv.com/iframe.php?idzone=2743440&size=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-    <iframe src="//ads.exdynsrv.com/iframe.php?idzone=2743442&size=468x60" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-    <script type="text/javascript">
-        var ad_idzone = "2743444",
-            ad_width = "468",
-            ad_height = "60";
-    </script>
-    <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-    <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2743444" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2743444&output=img&type=468x60" width="468" height="60"></a></noscript>
-    <script type="text/javascript">
-        var ad_idzone = "2743446",
-            ad_width = "468",
-            ad_height = "60";
-    </script>
-    <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-    <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2743446" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2743446&output=img&type=468x60" width="468" height="60"></a></noscript>
-    <script type="text/javascript">
-        var ad_idzone = "2743448",
-            ad_width = "468",
-            ad_height = "60";
-    </script>
-    <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-    <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2743448" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2743448&output=img&type=468x60" width="468" height="60"></a></noscript>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-</div>
+    <div style="display: none">
+        <script type="text/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=2730554"></script>
+        <script type="text/javascript">
+            var ad_idzone = "2730660",
+                ad_width = "728",
+                ad_height = "90";
+        </script>
+        <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
+        <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2730660" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2730660&output=img&type=728x90" width="728" height="90"></a></noscript>
+        <script type="text/javascript">
+            var ad_idzone = "2730662",
+                ad_width = "468",
+                ad_height = "60";
+        </script>
+        <script type="text/javascript">
+            var ad_idzone = "2730664",
+                ad_width = "728",
+                ad_height = "90";
+        </script>
+        <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
+        <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2730664" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2730664&output=img&type=728x90" width="728" height="90"></a></noscript>
+        <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
+        <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2730662" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2730662&output=img&type=468x60" width="468" height="60"></a></noscript>
+        <script type="text/javascript">
+            var ad_idzone = "2730658",
+                ad_width = "300",
+                ad_height = "250";
+        </script>
+        <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
+        <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2730658" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2730658&output=img&type=300x250" width="300" height="250"></a></noscript>
+        <iframe src="//ads.exdynsrv.com/iframe.php?idzone=2743438&size=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+        <iframe src="//ads.exdynsrv.com/iframe.php?idzone=2743440&size=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+        <iframe src="//ads.exdynsrv.com/iframe.php?idzone=2743442&size=468x60" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+        <script type="text/javascript">
+            var ad_idzone = "2743444",
+                ad_width = "468",
+                ad_height = "60";
+        </script>
+        <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
+        <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2743444" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2743444&output=img&type=468x60" width="468" height="60"></a></noscript>
+        <script type="text/javascript">
+            var ad_idzone = "2743446",
+                ad_width = "468",
+                ad_height = "60";
+        </script>
+        <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
+        <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2743446" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2743446&output=img&type=468x60" width="468" height="60"></a></noscript>
+        <script type="text/javascript">
+            var ad_idzone = "2743448",
+                ad_width = "468",
+                ad_height = "60";
+        </script>
+        <script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
+        <noscript><a href="https://main.exdynsrv.com/img-click.php?idzone=2743448" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2743448&output=img&type=468x60" width="468" height="60"></a></noscript>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
     </div>
-   
+</div>
 
 
 
-    
+
+
 
 </body>
 </html>

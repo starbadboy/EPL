@@ -239,7 +239,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\epl.css" />
     <Content Include="Content\screen.css" />
+    <Content Include="Image\badges-50-sprite%40x2.png" />
     <Content Include="Image\close.png" />
+    <Content Include="Image\page-hero-small.png" />
+    <Content Include="Image\page-hero.png" />
     <Content Include="Image\tv\1.jpg" />
     <Content Include="Image\badges-25-sprite%40x2.png" />
     <Content Include="Image\badges-25-sprite.png" />
@@ -317,6 +320,7 @@
     <Content Include="Views\Home\Donate.cshtml" />
     <Content Include="Views\Home\Videos.cshtml" />
     <Content Include="Views\Home\VideoPage.cshtml" />
+    <Content Include="Views\Home\Pending.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
