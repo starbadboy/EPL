@@ -21,7 +21,6 @@
 <body>
 
 <div class="navbar navbar-inverse navbar-fixed-top">
-
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -29,10 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/" class="plLogo" aria-label="Premier League Home Page on logo link">
-                <span class="mobile"><img src="/Image/premier-league-logo-header-mob.svg" alt="Premier League Logo"></span>
-            </a>
-            @*@Html.ActionLink("Watch EPL HighLights", "Videos", "Home", new {area = ""}, new {@class = "navbar-brand"})*@
+            @Html.ActionLink("Watch EPL HighLights", "Videos", "Home", new {area = ""}, new {@class = "navbar-brand"})
         </div>
         @if (HttpContext.Current.Request.UserLanguages != null && HttpContext.Current.Request.UserLanguages[0].ToLower() == "zh-cn")
         {
