@@ -239,6 +239,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\epl.css" />
     <Content Include="Content\screen.css" />
+    <Content Include="Content\video.css" />
     <Content Include="Image\badges-50-sprite%40x2.png" />
     <Content Include="Image\close.png" />
     <Content Include="Image\page-hero-small.png" />
