@@ -22872,7 +22872,7 @@ p {
 }
 p a {
     text-decoration: none;
-    color: #e90052
+    color: #38003c
 }
 p a:hover {
     text-decoration: underline
@@ -22918,11 +22918,11 @@ abbr[title] {
     cursor: help
 }
 ::-moz-selection {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 ::selection {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 html {
@@ -23172,7 +23172,7 @@ body.fixedBody {
     }
 }
 .noContentContainer {
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     margin: 2rem 0;
     position: relative;
@@ -23856,7 +23856,7 @@ body.fixedBody {
     text-decoration: none;
     border-radius: 0 0 2px 2px;
     transition: .2s;
-    background: #e90052
+    background: #38003c
 }
 .masthead .skipTo:focus {
     position: absolute;
@@ -23884,7 +23884,7 @@ body.fixedBody {
     border-bottom-color: #eaff04
 }
 .masthead .pageLinks>li.video a:after {
-    border-bottom-color: #e90052
+    border-bottom-color: #38003c
 }
 .masthead .pageLinks>li.open .dropdown,
 .masthead .pageLinks>li:hover .dropdown {
@@ -23914,7 +23914,7 @@ body.fixedBody {
     left: 0;
     right: 0;
     height: 0;
-    background: #e90052;
+    background: #38003c;
     transition: .2s;
     z-index: -1
 }
@@ -23936,7 +23936,7 @@ body.fixedBody {
     height: 5px
 }
 .masthead .search .searchBtn.active {
-    background: #e90052
+    background: #38003c
 }
 .masthead .search .searchBtn.active:focus {
     background: #b60040
@@ -24013,7 +24013,7 @@ body.fixedBody {
     position: absolute;
     top: 6rem;
     left: 50%;
-    background: #e90052;
+    background: #38003c;
     min-width: 100%;
     border-radius: 0 0 2px 2px;
     -webkit-transform: scale(0) translateX(-50%);
@@ -24031,7 +24031,7 @@ body.fixedBody {
     content: "";
     display: block;
     border: 8px solid transparent;
-    border-bottom-color: #e90052;
+    border-bottom-color: #38003c;
     position: absolute;
     top: -16px;
     left: 50%;
@@ -24267,7 +24267,7 @@ body.fixedBody {
         transform: translateX(-100%);
         opacity: 0;
         overflow-y: auto;
-        border-top: 2px solid #e90052;
+        border-top: 2px solid #38003c;
         background: transparent
     }
     .masthead .mainNav:after {
@@ -24691,7 +24691,7 @@ body.fixedBody {
         position: static
     }
     .mastheadOpen .masthead .menuBtn {
-        background: #e90052
+        background: #38003c
     }
     .mastheadOpen .masthead .menuBtn .menuBtnContainer div:first-child {
         -webkit-transform: rotate(45deg);
@@ -24886,7 +24886,7 @@ body.webViewBody {
     display: none
 }
 .subNav ul .more a:hover {
-    color: #e90052
+    color: #38003c
 }
 .subNav ul .more.open .moreToggle {
     background: #e8e8e8
@@ -24936,7 +24936,7 @@ body.webViewBody {
 }
 .subNav a.active:before {
     height: 4px;
-    background: #e90052
+    background: #38003c
 }
 .subNav a.active:focus:before {
     background: #b60040
@@ -25018,7 +25018,7 @@ body.webViewBody {
     margin-bottom: 2rem
 }
 .mainFooter .active {
-    color: #e90052
+    color: #38003c
 }
 .mainFooter .double ul {
     -webkit-column-count: 2;
@@ -25341,7 +25341,7 @@ body.webViewBody {
         background: #04f5ff
     }
     to {
-        background: #e90052
+        background: #38003c
     }
 }
 @keyframes c {
@@ -25355,7 +25355,7 @@ body.webViewBody {
         background: #04f5ff
     }
     to {
-        background: #e90052
+        background: #38003c
     }
 }
 @-webkit-keyframes d {
@@ -25442,7 +25442,7 @@ body.webViewBody {
 .btn:hover,
 [class*=btn-]:focus,
 [class*=btn-]:hover {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 .btn:focus [class*=tooltip],
@@ -25601,7 +25601,7 @@ button[class*=btn-]:focus:active {
     }
 }
 .btn-highlight {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 .btn-highlight:focus,
@@ -25610,8 +25610,8 @@ button[class*=btn-]:focus:active {
 }
 .btn-highlight--outline {
     background: #fff;
-    box-shadow: inset 0 0 0 1px #e90052;
-    color: #e90052
+    box-shadow: inset 0 0 0 1px #38003c;
+    color: #38003c
 }
 .btn-highlight--outline:focus,
 .btn-highlight--outline:hover {
@@ -25668,7 +25668,7 @@ button[class*=btn-]:focus:active {
     }
 }
 .btn-more {
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     text-align: left;
     padding: 0 1.5rem;
@@ -25692,8 +25692,8 @@ button[class*=btn-]:focus:active {
 }
 .btn-more.btn-more-default:focus,
 .btn-more.btn-more-default:hover {
-    background: #e90052;
-    border-right-color: #e90052;
+    background: #38003c;
+    border-right-color: #38003c;
     color: #fff
 }
 .btn-tab {
@@ -25808,7 +25808,7 @@ button[class*=btn-]:focus:active {
     top: 50%;
     margin-top: -1rem;
     right: 0;
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     padding: 0 1rem;
     font-size: 1.2rem;
@@ -25894,7 +25894,7 @@ button[class*=btn-]:focus:active {
     transition: .2s
 }
 .searchInputContainer .searchInput:focus {
-    border-bottom-color: #e90052
+    border-bottom-color: #38003c
 }
 .searchInputContainer input[type=search] {
     box-sizing: border-box
@@ -25921,7 +25921,7 @@ button[class*=btn-]:focus:active {
 }
 .searchInputContainer .searchCommit:focus,
 .searchInputContainer .searchCommit:hover {
-    background: #e90052
+    background: #38003c
 }
 .searchInputContainer .searchCommit:focus .icn,
 .searchInputContainer .searchCommit:hover .icn {
@@ -26037,7 +26037,7 @@ button[class*=btn-]:focus:active {
 .thumbnail .tag {
     margin-bottom: .7em;
     min-height: 13px;
-    color: #e90052;
+    color: #38003c;
     font-size: 1.1rem
 }
 .thumbnail .tag,
@@ -26069,7 +26069,7 @@ button[class*=btn-]:focus:active {
     display: block
 }
 .thumbnail.videoThumb .image {
-    border-bottom: 3px solid #e90052
+    border-bottom: 3px solid #38003c
 }
 .thumbnail.videoThumb .image:before {
     display: none
@@ -26111,7 +26111,7 @@ button[class*=btn-]:focus:active {
 .thumbnail.videoThumb .runTime time {
     display: inline-block;
     padding: 0 .8rem;
-    background: #e90052
+    background: #38003c
 }
 .thumbnail.videoThumb .runTime .audioDesc {
     background: #38003c;
@@ -26166,7 +26166,7 @@ button[class*=btn-]:focus:active {
 }
 .thumbnail .openModal:focus .expandIcon,
 .thumbnail .openModal:hover .expandIcon {
-    fill: #e90052
+    fill: #38003c
 }
 @media (max-width: 63.9375em) {
     .thumbnail .openModal {
@@ -26664,8 +26664,8 @@ button[class*=btn-]:focus:active {
 }
 .table .revealMore:focus,
 .table .revealMore:hover {
-    background: #e90052;
-    border-bottom-color: #e90052
+    background: #38003c;
+    border-bottom-color: #38003c
 }
 .table .revealMore:focus .icn,
 .table .revealMore:hover .icn {
@@ -26704,7 +26704,7 @@ button[class*=btn-]:focus:active {
     border-bottom: 6px solid #13cf00
 }
 .table .movement.down {
-    border-top: 6px solid #e90052
+    border-top: 6px solid #38003c
 }
 .table [class*=badge-50] {
     display: inline-block;
@@ -26835,8 +26835,8 @@ button[class*=btn-]:focus:active {
     color: #fff
 }
 .table tr.expanded .revealMore {
-    background: #e90052;
-    border-bottom-color: #e90052
+    background: #38003c;
+    border-bottom-color: #38003c
 }
 .table tr.expanded .revealMore .icn {
     content: "";
@@ -26949,7 +26949,7 @@ button[class*=btn-]:focus:active {
     border-spacing: 1rem
 }
 .table .expandable [class*=overallStats] th {
-    border-bottom: 3px solid #e90052;
+    border-bottom: 3px solid #38003c;
     padding: 0;
     padding-bottom: .5rem
 }
@@ -27374,7 +27374,7 @@ table+.pointsDeductedContainer {
     content: "";
     display: block;
     position: absolute;
-    background: #e90052;
+    background: #38003c;
     top: -1px;
     left: -1px;
     right: -1px;
@@ -27388,7 +27388,7 @@ table+.pointsDeductedContainer {
 }
 .socialShareHover .socialShareBtn:focus,
 .socialShareHover .socialShareBtn:hover {
-    color: #e90052
+    color: #38003c
 }
 .socialShareHover .socialShareBtn:focus .icn,
 .socialShareHover .socialShareBtn:hover .icn {
@@ -27566,7 +27566,7 @@ table+.pointsDeductedContainer {
 }
 .widgetShare .socialShareBtn:focus,
 .widgetShare .socialShareBtn:hover {
-    background: #e90052
+    background: #38003c
 }
 .widgetShare .socialShareBtn:focus .icn,
 .widgetShare .socialShareBtn:hover .icn {
@@ -27584,7 +27584,7 @@ table+.pointsDeductedContainer {
     }
 }
 .widgetShare.open .socialShareBtn {
-    background: #e90052
+    background: #38003c
 }
 .widgetShare.open .socialShareBtn .icn {
     content: "";
@@ -27989,7 +27989,7 @@ table+.pointsDeductedContainer {
     min-width: 3rem;
     display: inline-block;
     vertical-align: middle;
-    color: #e90052;
+    color: #38003c;
     transition: .2s;
     font-size: 1.1rem
 }
@@ -28003,7 +28003,7 @@ table+.pointsDeductedContainer {
     vertical-align: middle
 }
 .matchAbridged span.matchTime {
-    color: #e90052;
+    color: #38003c;
     padding-right: 1.2rem
 }
 .matchAbridged time {
@@ -28080,7 +28080,7 @@ table+.pointsDeductedContainer {
 .matchAbridged.live .score,
 .matchAbridged.live:focus,
 .matchAbridged.live:hover {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 .matchAbridged.live:focus .matchMinuteContainer,
@@ -28090,16 +28090,16 @@ table+.pointsDeductedContainer {
 .matchAbridged.live:focus .score,
 .matchAbridged.live:hover .score {
     background: #fff;
-    color: #e90052
+    color: #38003c
 }
 .matchAbridged.active {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 .matchAbridged.active .score,
 .matchAbridged.active time {
     background: #fff;
-    color: #e90052
+    color: #38003c
 }
 .matchAbridged.active .minutes {
     color: #fff
@@ -28120,13 +28120,13 @@ table+.pointsDeductedContainer {
 }
 .matchAbridged:focus,
 .matchAbridged:hover {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 @media (max-width: 43.75em) {
     .matchAbridged:focus,
     .matchAbridged:hover {
-        background: #e90052;
+        background: #38003c;
         color: #fff
     }
 }
@@ -28141,7 +28141,7 @@ table+.pointsDeductedContainer {
 .matchAbridged:focus time,
 .matchAbridged:hover time {
     background: #fff;
-    color: #e90052
+    color: #38003c
 }
 .matchAbridged:focus [class*=arrow-right],
 .matchAbridged:hover [class*=arrow-right] {
@@ -28520,7 +28520,7 @@ table+.pointsDeductedContainer {
     overflow: hidden;
     white-space: nowrap;
     border-bottom: 1px solid #e8e8e8;
-    color: #e90052;
+    color: #38003c;
     min-height: 4rem
 }
 .dropDown .current:before {
@@ -28531,7 +28531,7 @@ table+.pointsDeductedContainer {
     left: 0;
     width: 0;
     height: 1px;
-    background: #e90052;
+    background: #38003c;
     transition: .2s;
     z-index: 10
 }
@@ -28555,7 +28555,7 @@ table+.pointsDeductedContainer {
 }
 .dropDown .current:focus,
 .dropDown .current:hover {
-    color: #e90052
+    color: #38003c
 }
 .dropDown .current:focus:before,
 .dropDown .current:hover:before {
@@ -28685,7 +28685,7 @@ table+.pointsDeductedContainer {
 }
 .tablist li:focus,
 .tablist li:hover {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 .tablist li.active {
@@ -29175,7 +29175,7 @@ table+.pointsDeductedContainer {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: #e90052
+    background: #38003c
 }
 .fixture--large .teamEvents,
 .fixture .teamEvents {
@@ -29245,7 +29245,7 @@ table+.pointsDeductedContainer {
 }
 .fixture--large.live,
 .fixture.live {
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     border-top: 0
 }
@@ -29262,7 +29262,7 @@ table+.pointsDeductedContainer {
 .fixture--large.live .score,
 .fixture.live .score {
     background: #fff;
-    color: #e90052
+    color: #38003c
 }
 .fixture--large .mcBtn,
 .fixture .mcBtn {
@@ -29599,7 +29599,7 @@ table+.pointsDeductedContainer {
     }
     .fixture--large.live .teams,
     .fixture.live .teams {
-        background: #e90052
+        background: #38003c
     }
     .fixture--large.live .team:first-of-type,
     .fixture.live .team:first-of-type {
@@ -29722,7 +29722,7 @@ table+.pointsDeductedContainer {
         vertical-align: baseline
     }
     .fixture.live .teams {
-        background: #e90052
+        background: #38003c
     }
     .fixture.live .team:first-of-type {
         padding-left: 4rem
@@ -29811,7 +29811,7 @@ a.fixture:focus,
 a.fixture:hover,
 div.fixture:focus,
 div.fixture:hover {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 a.fixture:focus .stadium,
@@ -29842,7 +29842,7 @@ div.fixture:focus time,
 div.fixture:hover .score,
 div.fixture:hover time {
     background: #fff;
-    color: #e90052
+    color: #38003c
 }
 a.fixture:focus .broadcaster,
 a.fixture:hover .broadcaster,
@@ -30126,12 +30126,12 @@ div.fixture.live:hover .arrow-right {
 }
 .tooltipContainer.tooltip-link:focus .tooltip-content:after,
 .tooltipContainer.tooltip-link:hover .tooltip-content:after {
-    border-top-color: #e90052
+    border-top-color: #38003c
 }
 .tooltipContainer.tooltip-link:focus .matchAbridged,
 .tooltipContainer.tooltip-link:hover .matchAbridged {
     color: #fff;
-    background: #e90052
+    background: #38003c
 }
 .tooltipContainer.tooltip-link:focus .matchAbridged .matchInfo,
 .tooltipContainer.tooltip-link:hover .matchAbridged .matchInfo {
@@ -30155,18 +30155,18 @@ div.fixture.live:hover .arrow-right {
 .tooltipContainer.tooltip-link:focus .matchAbridged time,
 .tooltipContainer.tooltip-link:hover .matchAbridged time {
     background: #fff;
-    color: #e90052
+    color: #38003c
 }
 .tooltipContainer.tooltip-link .tooltip-content {
     padding: 0
 }
 .tooltipContainer.tooltip-link .tooltip-content:focus,
 .tooltipContainer.tooltip-link .tooltip-content:hover {
-    background: #e90052
+    background: #38003c
 }
 .tooltipContainer.tooltip-link .tooltip-content:focus:after,
 .tooltipContainer.tooltip-link .tooltip-content:hover:after {
-    border-top-color: #e90052
+    border-top-color: #38003c
 }
 .nextMatchCol .tooltipContainer.tooltip-right {
     right: 1rem
@@ -30272,7 +30272,7 @@ div.fixture.live:hover .arrow-right {
     transform: translateY(-50%)
 }
 .heroArticle .heroThumb .tag {
-    color: #e90052
+    color: #38003c
 }
 .heroArticle .heroThumb .tag:empty {
     display: none
@@ -30361,13 +30361,13 @@ div.fixture.live:hover .arrow-right {
 }
 .heroArticle.breakingNews .col-12,
 .heroArticle.breakingNews:before {
-    background-color: #e90052
+    background-color: #38003c
 }
 .heroArticle.breakingNews:before {
     background-image: url(../i/bg-elements/thumb-hero-primary.svg)
 }
 .heroArticle.breakingNews .heroThumb {
-    background: #e90052
+    background: #38003c
 }
 .heroArticle.breakingNews .heroThumb .tag {
     background: #38003c;
@@ -30376,7 +30376,7 @@ div.fixture.live:hover .arrow-right {
     color: #fff
 }
 .heroArticle.breakingNews .heroThumb svg {
-    fill: #e90052
+    fill: #38003c
 }
 .heroArticle.breakingNews .relatedArticle p {
     color: #fff
@@ -30564,7 +30564,7 @@ div.fixture.live:hover .arrow-right {
 .heroThumb .runTime time {
     display: inline-block;
     padding: 0 .8rem;
-    background: #e90052;
+    background: #38003c;
     font-size: 1.2rem
 }
 .heroThumb .ginfo .audioDesc,
@@ -30607,7 +30607,7 @@ div.fixture.live:hover .arrow-right {
 .heroThumb .tag {
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    color: #e90052
+    color: #38003c
 }
 .heroThumb .title {
     font-size: 3.8rem;
@@ -30691,7 +30691,7 @@ div.fixture.live:hover .arrow-right {
 .toggle li:focus,
 .toggle li:hover {
     background: #38003c;
-    color: #e90052
+    color: #38003c
 }
 .toggle li {
     background: transparent;
@@ -30745,7 +30745,7 @@ div.fixture.live:hover .arrow-right {
     top: 3rem;
     right: 3rem;
     text-indent: -9999px;
-    background: #e90052;
+    background: #38003c;
     border-radius: 100%;
     width: 5rem;
     height: 5rem;
@@ -30860,7 +30860,7 @@ div.fixture.live:hover .arrow-right {
 }
 .plBroadcastModalContent .modalNowPlaying,
 .plModalContent .modalNowPlaying {
-    color: #e90052;
+    color: #38003c;
     font-size: 1.2rem
 }
 .plBroadcastModalContent .modalNowPlaying:before,
@@ -30895,7 +30895,7 @@ div.fixture.live:hover .arrow-right {
 }
 .plBroadcastModalContent .videoDate,
 .plModalContent .videoDate {
-    color: #e90052;
+    color: #38003c;
     font-size: 1.2rem
 }
 .plBroadcastModalContent .audioDesc,
@@ -31085,7 +31085,7 @@ div.fixture.live:hover .arrow-right {
     display: block;
     height: 2px;
     width: 0;
-    background: #e90052;
+    background: #38003c;
     transition: all .2s ease
 }
 .searchBar .searchInputContainer {
@@ -31121,7 +31121,7 @@ div.fixture.live:hover .arrow-right {
 }
 .searchBar .searchBtnContainer .searchInputBtn:focus+.btnBg,
 .searchBar .searchBtnContainer .searchInputBtn:hover+.btnBg {
-    background: #e90052
+    background: #38003c
 }
 .searchBar .searchBtnContainer .searchInputBtn:focus+.btnBg+.icn,
 .searchBar .searchBtnContainer .searchInputBtn:hover+.btnBg+.icn {
@@ -31153,7 +31153,7 @@ div.fixture.live:hover .arrow-right {
     background: #b60040
 }
 .searchBar .searchBtnContainer.active .btnBg {
-    background: #e90052
+    background: #38003c
 }
 .searchBar .searchBtnContainer.active .icn {
     content: "";
@@ -31252,7 +31252,7 @@ div.fixture.live:hover .arrow-right {
     background: #38003c;
     padding-left: 1rem;
     line-height: 5rem;
-    border-bottom: 4px solid #e90052;
+    border-bottom: 4px solid #38003c;
     margin-bottom: 3rem;
     margin-left: -1rem;
     margin-right: -1rem
@@ -31273,7 +31273,7 @@ div.fixture.live:hover .arrow-right {
 }
 .pageFilter .mobileHeader .close {
     float: right;
-    background: #e90052;
+    background: #38003c;
     padding: 0 2rem;
     color: #fff;
     font-size: 1.2rem
@@ -31379,7 +31379,7 @@ div.fixture.live:hover .arrow-right {
     }
 }
 .pageFilter.open .dropDown .current:focus {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 .pageFilter.open .dropDown .dropdownList {
@@ -31415,7 +31415,7 @@ div.fixture.live:hover .arrow-right {
     display: block
 }
 .pageFilter.open .dropDown.open .current {
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     border-radius: 0
 }
@@ -31665,7 +31665,7 @@ div.fixture.live:hover .arrow-right {
 .heroPageLinks .more .moreToggleDropdown li a:not(.active):focus,
 .heroPageLinks .more .moreToggleDropdown li a:not(.active):hover {
     background: transparent;
-    color: #e90052
+    color: #38003c
 }
 .heroPageLinks .more .moreToggleDropdown li:hover {
     background-color: transparent
@@ -31865,7 +31865,7 @@ div.fixture.live:hover .arrow-right {
     background: transparent
 }
 .paginationContainer li.active {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 .paginationContainer li.active:hover {
@@ -32057,7 +32057,7 @@ div.fixture.live:hover .arrow-right {
     background: #267788
 }
 .notificationBar.highlightNotification {
-    background: #e90052
+    background: #38003c
 }
 .h2h-previous-meetings .btn-highlight {
     width: 300px;
@@ -32082,7 +32082,7 @@ div.fixture.live:hover .arrow-right {
     position: relative
 }
 .fixturesModel .fixturesHeader {
-    background-color: #e90052;
+    background-color: #38003c;
     text-align: center;
     line-height: 5rem;
     height: 5rem;
@@ -32143,7 +32143,7 @@ div.fixture.live:hover .arrow-right {
     vertical-align: middle
 }
 .fixturesModel .fixturesHeader .match-time p {
-    color: #e90052;
+    color: #38003c;
     font-size: 1.2rem;
     line-height: 2.6rem
 }
@@ -32361,7 +32361,7 @@ div.fixture.live:hover .arrow-right {
 .homeTabs .toggle {
     display: table;
     margin: 0 auto;
-    background: #e90052
+    background: #38003c
 }
 .homeTabs .toggle:before {
     content: "";
@@ -32418,7 +32418,7 @@ div.fixture.live:hover .arrow-right {
     }
 }
 .notificationPromo {
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     margin: 2rem auto;
     position: relative;
@@ -32448,7 +32448,7 @@ div.fixture.live:hover .arrow-right {
 }
 .notificationPromo a:focus,
 .notificationPromo a:hover {
-    background-color: #e90052
+    background-color: #38003c
 }
 .notificationPromo .arrow-right-d,
 .notificationPromo .arrow-right-w {
@@ -32494,7 +32494,7 @@ div.fixture.live:hover .arrow-right {
     }
 }
 .singleVideo {
-    background: #e90052 url(../i/bg-elements/thumb-hero-primary.svg);
+    background: #38003c url(../i/bg-elements/thumb-hero-primary.svg);
     background-position: left 50% top;
     background-position: left 50vw top;
     background-repeat: no-repeat;
@@ -32578,7 +32578,7 @@ div.fixture.live:hover .arrow-right {
     padding: 0 2rem
 }
 .single-video-item__status {
-    color: #e90052;
+    color: #38003c;
     display: block;
     font-size: 1.2rem;
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -32601,7 +32601,7 @@ div.fixture.live:hover .arrow-right {
     }
 }
 .single-video-item__date {
-    color: #e90052;
+    color: #38003c;
     font-family: PremierSans-Light, Arial, Helvetica Neue, Helvetica, sans-serif;
     padding: 0 2rem
 }
@@ -32625,7 +32625,7 @@ div.fixture.live:hover .arrow-right {
     height: 4rem;
     line-height: 4rem;
     text-align: center;
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 .broadcastersModal .broadcastersTvInfoHeader .broadcastersTvInfoHeaderInner {
@@ -32727,7 +32727,7 @@ div.fixture.live:hover .arrow-right {
 .broadcastersModal .matchCentreLiveStreamContainer {
     display: inline-block;
     height: 25px;
-    background-color: #e90052;
+    background-color: #38003c;
     padding: 0 1rem 0 .5rem
 }
 .broadcastersModal .matchCentreLiveStreamContainer.matchCentreLiveStreamContainerEmpty {
@@ -32997,7 +32997,7 @@ div.fixture.live:hover .arrow-right {
     display: none
 }
 .pageHero .subHeader {
-    color: #e90052
+    color: #38003c
 }
 .pageHero .searchContainer,
 .pageHero .searchContentContainer,
@@ -33035,7 +33035,7 @@ div.fixture.live:hover .arrow-right {
     border-radius: 3px 3px 0 0
 }
 .pageHero.videoHeader {
-    background-color: #e90052;
+    background-color: #38003c;
     background-image: url(../i/bg-elements/page-hero-primary.png);
     background-repeat: no-repeat
 }
@@ -33056,7 +33056,7 @@ div.fixture.live:hover .arrow-right {
     margin-bottom: 2rem
 }
 .pageHero.videoHeader [class*=block-list] {
-    background: #e90052
+    background: #38003c
 }
 .pageHero.videoHeader .thumbnail .title {
     color: #fff
@@ -33872,7 +33872,7 @@ div.fixture.live:hover .arrow-right {
     left: -1px;
     right: -1px;
     height: 4px;
-    background: #e90052
+    background: #38003c
 }
 .fixturesAbridgedHeader .competition {
     display: inline-block;
@@ -33959,7 +33959,7 @@ div.fixture.live:hover .arrow-right {
     left: -1px;
     right: -1px;
     height: 4px;
-    background: #e90052
+    background: #38003c
 }
 .fixturesAbridged .matchAbridged .teamName {
     min-width: 3.4rem
@@ -34093,7 +34093,7 @@ div.fixture.live:hover .arrow-right {
     color: #76766f
 }
 .statsCard .stat {
-    color: #e90052
+    color: #38003c
 }
 .statsCard .statsHero {
     padding: 1rem 1rem 5rem;
@@ -34321,7 +34321,7 @@ div.fixture.live:hover .arrow-right {
     left: -1px;
     right: -1px;
     height: 4px;
-    background: #e90052
+    background: #38003c
 }
 .articleWidget .standingsAbridged .subHeader {
     padding: 0 1rem;
@@ -34725,7 +34725,7 @@ div.fixture.live:hover .arrow-right {
     text-decoration: none
 }
 .socialSection .clubCard {
-    background-color: #e90052;
+    background-color: #38003c;
     padding-left: 1rem;
     padding-right: 1rem
 }
@@ -35153,7 +35153,7 @@ div.fixture.live:hover .arrow-right {
     }
 }
 .homepageTakeover {
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     margin-top: -2rem;
     padding: 0;
@@ -35240,7 +35240,7 @@ div.fixture.live:hover .arrow-right {
     width: auto;
     position: absolute;
     top: 0;
-    fill: #e90052
+    fill: #38003c
 }
 .homepageTakeover .homepageTakeover__image svg .blackFill {
     fill: #000
@@ -35348,10 +35348,10 @@ div.fixture.live:hover .arrow-right {
 .homepageTakeover .homepageTakeover__content .matchAbridged:focus .score,
 .homepageTakeover .homepageTakeover__content .matchAbridged:hover .score {
     background: #fff;
-    color: #e90052
+    color: #38003c
 }
 .homepageTakeover .homepageTakeover__content .matchAbridged.fullTime .broadcaster {
-    color: #e90052
+    color: #38003c
 }
 @media (max-width: 75em) {
     .homepageTakeover .shard,
@@ -35377,7 +35377,7 @@ div.fixture.live:hover .arrow-right {
         width: 100%;
         max-width: 50rem;
         height: auto;
-        fill: #e90052
+        fill: #38003c
     }
     .homepageTakeover .homepageTakeover__content {
         width: 100%;
@@ -35530,7 +35530,7 @@ div.fixture.live:hover .arrow-right {
 }
 @media (max-width: 48.0625em) {
     .homepageTakeover .homepageTakeover__content .matchAbridged .minutes {
-        color: #e90052
+        color: #38003c
     }
     .homepageTakeover .homepageTakeover__content .matchAbridged:hover {
         background: #fff
@@ -35578,7 +35578,7 @@ div.fixture.live:hover .arrow-right {
     color: #fff
 }
 .homeStandingsHeader {
-    background: #e90052;
+    background: #38003c;
     padding-top: 1rem;
     border-radius: 3px 3px 0 0
 }
@@ -35837,7 +35837,7 @@ div.fixture.live:hover .arrow-right {
     background-color: #00ff87
 }
 .fantasy-league .fantasyClubContainer .fantasy-club_player-wrapper .fantasy-club_player .fantasy-club_player-desc .midfielder {
-    background-color: #e90052
+    background-color: #38003c
 }
 .fantasy-league .fantasyClubContainer .fantasy-club_player-wrapper .fantasy-club_player .fantasy-club_player-desc .forward {
     background-color: #04f5ff
@@ -35874,7 +35874,7 @@ div.fixture.live:hover .arrow-right {
     font-size: 1.5rem
 }
 .fantasy-league .fantasyClubContainer .articleContainer .articleContainer_title span {
-    background-color: #e90052;
+    background-color: #38003c;
     padding: .5rem 1rem
 }
 .fantasy-league .fantasyClubContainer .articleContainer .articleContainer_subtitle {
@@ -36253,7 +36253,7 @@ div.fixture.live:hover .arrow-right {
     }
 }
 .cookies-notice {
-    background-color: #e90052;
+    background-color: #38003c;
     padding: 2rem 0;
     position: fixed;
     bottom: 0;
@@ -36647,7 +36647,7 @@ div.fixture.live:hover .arrow-right {
 }
 .commercialPartners .premiumBox .commercialLink:focus .btn,
 .commercialPartners .premiumBox .commercialLink:hover .btn {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 .commercialPartners .premiumBox .commercialLink:focus .btn .icn,
@@ -36696,7 +36696,7 @@ div.fixture.live:hover .arrow-right {
     height: 38rem
 }
 .commercialPartners .moreInfo .infoBox:first-child .infoTop {
-    background: #e90052
+    background: #38003c
 }
 .commercialPartners .moreInfo .infoBox:nth-child(2) .infoTop {
     background: #04f5ff
@@ -36730,7 +36730,7 @@ div.fixture.live:hover .arrow-right {
     height: 50%;
     display: block;
     position: relative;
-    background: #e90052
+    background: #38003c
 }
 .commercialPartners .moreInfo .infoTop img {
     width: 80px;
@@ -36775,7 +36775,7 @@ div.fixture.live:hover .arrow-right {
 }
 .commercialPartners .moreInfo .tag {
     font-size: 1.2rem;
-    color: #e90052
+    color: #38003c
 }
 .commercialPartners .moreInfo .infoTitle {
     padding: .5rem 0;
@@ -36953,7 +36953,7 @@ div.fixture.live:hover .arrow-right {
 }
 .faq .question {
     padding: 2rem;
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     font-size: 1.4rem
 }
@@ -37091,7 +37091,7 @@ div.fixture.live:hover .arrow-right {
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif
 }
 .getInTouchForm .required {
-    color: #e90052;
+    color: #38003c;
     display: block;
     font-size: 1.1rem;
     margin-top: .5rem;
@@ -37100,7 +37100,7 @@ div.fixture.live:hover .arrow-right {
 .getInTouchForm .textInput {
     background: #e8e8e8;
     border: 0;
-    border-bottom: 2px solid #e90052;
+    border-bottom: 2px solid #38003c;
     outline: none;
     width: 80%;
     margin-bottom: 3rem;
@@ -37195,7 +37195,7 @@ div.fixture.live:hover .arrow-right {
     line-height: 2
 }
 .contactInformation .note {
-    color: #e90052;
+    color: #38003c;
     font-size: 1.2rem
 }
 @media (max-width: 56.25em) {
@@ -37304,9 +37304,9 @@ div.fixture.live:hover .arrow-right {
 }
 .searchResults .listTab li a:focus,
 .searchResults .listTab li a:hover {
-    background: #e90052;
+    background: #38003c;
     color: #fff;
-    border-bottom-color: #e90052
+    border-bottom-color: #38003c
 }
 .searchResults .listTab li a:focus .icn,
 .searchResults .listTab li a:hover .icn {
@@ -37336,7 +37336,7 @@ div.fixture.live:hover .arrow-right {
 .searchResults .searchResultSidebar {
     padding: 0;
     border: 1px solid #e8e8e8;
-    border-top: 4px solid #e90052
+    border-top: 4px solid #38003c
 }
 .searchResults .searchResultSidebar .sidebarItem {
     padding: 2rem 1rem 1rem;
@@ -37443,7 +37443,7 @@ div.fixture.live:hover .arrow-right {
 .photoSlide .thumbnails li:focus,
 .photoSlide .thumbnails li:hover {
     opacity: 1;
-    border-color: #e90052
+    border-color: #38003c
 }
 .photoSlide .thumbnails img {
     width: 100%;
@@ -37659,7 +37659,7 @@ div.fixture.live:hover .arrow-right {
     width: 100%;
     height: 100%;
     margin-top: -2rem;
-    background: #e90052;
+    background: #38003c;
     position: relative;
     overflow: hidden
 }
@@ -37670,7 +37670,7 @@ div.fixture.live:hover .arrow-right {
     width: 100%;
     height: 2rem;
     top: 100%;
-    background: #e90052;
+    background: #38003c;
     z-index: 5
 }
 .notFoundPage .notFoundContainer {
@@ -38009,7 +38009,7 @@ hr {
 }
 .matchAbridged.fullTime:focus .broadcaster,
 .matchAbridged.fullTime:hover .broadcaster {
-    color: #e90052
+    color: #38003c
 }
 .livestream--none,
 .matchFixtureContainer .livestream {
@@ -38040,12 +38040,12 @@ hr {
 }
 .broadcaster,
 .matchAbridged .broadcaster {
-    color: #e90052;
+    color: #38003c;
     margin-top: .6rem
 }
 .broadcaster .logo,
 .matchAbridged .broadcaster .logo {
-    color: #e90052;
+    color: #38003c;
     font-size: 1.2rem
 }
 div.fixture:focus .broadcaster .logo,
@@ -38078,7 +38078,7 @@ span.fixture .highlightBroadcasterLogo {
 }
 .hptoMatchesContainer .matchAbridged:focus .broadcaster,
 .hptoMatchesContainer .matchAbridged:hover .broadcaster {
-    color: #e90052
+    color: #38003c
 }
 @media (max-width: 500px) {
     .mcNav .matchAbridged {
@@ -38227,7 +38227,7 @@ div.fixture.preMatch:hover .broadcaster-text {
 @media (max-width: 56.25em) {
     .fixture.live:focus .broadcastDataContainer .broadcaster,
     .fixture.live:hover .broadcastDataContainer .broadcaster {
-        color: #e90052
+        color: #38003c
     }
 }
 .highlightName {
@@ -38422,8 +38422,8 @@ div.fixture.preMatch:hover .broadcaster-text {
     margin-top: 2px
 }
 .embeddable-poll .poll-content .question:not(.answer):hover {
-    background: #e90052;
-    border-color: #e90052
+    background: #38003c;
+    border-color: #38003c
 }
 .embeddable-poll .poll-content .question:not(.answer):hover .tick-w {
     display: inline-block;
@@ -38448,7 +38448,7 @@ div.fixture.preMatch:hover .broadcaster-text {
     left: 0;
     bottom: 0;
     width: 50%;
-    background: #e90052;
+    background: #38003c;
     transition: all .5s cubic-bezier(1, .07, .83, .67) .3s;
     z-index: 5;
     border-top-left-radius: 3px;
@@ -38961,10 +38961,10 @@ div.matchHighlightsBanner .competition span {
     cursor: pointer
 }
 .head-to-head-comparison .team.active .team-badge {
-    border: 2px solid #e90052
+    border: 2px solid #38003c
 }
 .head-to-head-comparison .team.active .plus-icon {
-    background-color: #e90052
+    background-color: #38003c
 }
 .head-to-head-comparison .team.selected .team-badge {
     border: 2px solid #38003c
@@ -38998,11 +38998,11 @@ div.matchHighlightsBanner .competition span {
 }
 .head-to-head-comparison .team-badge:focus,
 .head-to-head-comparison .team-badge:hover {
-    border-color: #e90052
+    border-color: #38003c
 }
 .head-to-head-comparison .team-badge:focus .plus-icon,
 .head-to-head-comparison .team-badge:hover .plus-icon {
-    background: #e90052
+    background: #38003c
 }
 .head-to-head-comparison .team-badge .badgeContainer {
     position: absolute;
@@ -39100,7 +39100,7 @@ div.matchHighlightsBanner .competition span {
 }
 .head-to-head-comparison .add-club span,
 .head-to-head-comparison .change-club span {
-    color: #e90052;
+    color: #38003c;
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif
 }
 .head-to-head-comparison .change-club {
@@ -39114,7 +39114,7 @@ div.matchHighlightsBanner .competition span {
     margin-left: -1.5rem;
     height: 3rem;
     margin-top: -1.5rem;
-    background-color: #e90052;
+    background-color: #38003c;
     border-radius: 100%
 }
 .head-to-head-comparison .v p {
@@ -39129,7 +39129,7 @@ div.matchHighlightsBanner .competition span {
 .head-to-head-comparison .v:after {
     content: "";
     width: 8rem;
-    border-bottom: 3px solid #e90052;
+    border-bottom: 3px solid #38003c;
     position: absolute;
     left: -2.5rem;
     margin-top: -1.3rem;
@@ -39316,7 +39316,7 @@ div.matchHighlightsBanner .competition span {
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif
 }
 .head-to-head-stats-table .head-to-head-stats td:nth-child(odd) .higher {
-    color: #e90052
+    color: #38003c
 }
 .head-to-head-stats-table .head-to-head-stats td:first-child {
     text-align: right
@@ -39438,7 +39438,7 @@ div.matchHighlightsBanner .competition span {
     position: absolute;
     top: 2%;
     right: 2%;
-    background-color: #e90052;
+    background-color: #38003c;
     border-radius: 100%;
     display: none
 }
@@ -39483,14 +39483,14 @@ div.matchHighlightsBanner .competition span {
 }
 .head-to-head-select-teams .team-card:focus,
 .head-to-head-select-teams .team-card:hover {
-    border: 2px solid #e90052
+    border: 2px solid #38003c
 }
 .head-to-head-select-teams .team-card:focus .plus-icon-small,
 .head-to-head-select-teams .team-card:hover .plus-icon-small {
     display: inline-block
 }
 .head-to-head-select-teams .team-card.is-selected {
-    border: 2px solid #e90052
+    border: 2px solid #38003c
 }
 @media (max-width: 970px) {
     .head-to-head-select-teams .team-card {
@@ -39653,7 +39653,7 @@ div.matchHighlightsBanner .competition span {
 .upcoming .matchAbridged:focus,
 .upcoming .matchAbridged:hover {
     background-color: #fff;
-    border: 2px solid #e90052
+    border: 2px solid #38003c
 }
 .recent .matchAbridged:focus .teamName,
 .recent .matchAbridged:hover .teamName,
@@ -39672,11 +39672,11 @@ div.matchHighlightsBanner .competition span {
 .recent .matchAbridged:hover .plus-icon,
 .upcoming .matchAbridged:focus .plus-icon,
 .upcoming .matchAbridged:hover .plus-icon {
-    background-color: #e90052
+    background-color: #38003c
 }
 .previous-meetings {
     border: 1px solid #e8e8e8;
-    border-top: 3px solid #e90052;
+    border-top: 3px solid #38003c;
     margin: 2rem auto 0
 }
 .previous-meetings h4 {
@@ -39837,7 +39837,7 @@ div.matchHighlightsBanner .competition span {
     padding: 3rem 0 9rem 8rem
 }
 .articleHeader .newsTag {
-    color: #e90052;
+    color: #38003c;
     margin-bottom: .5rem
 }
 .articleHeader .articleTitle {
@@ -39846,7 +39846,7 @@ div.matchHighlightsBanner .competition span {
     line-height: 1.2
 }
 .articleHeader .articleAuth {
-    color: #e90052
+    color: #38003c
 }
 .articleHeader h5 {
     font-family: PremierSans-Regular, Arial, Helvetica Neue, Helvetica, sans-serif
@@ -40005,7 +40005,7 @@ div.matchHighlightsBanner .competition span {
 .standardArticle>ol a,
 .standardArticle>ul a {
     text-decoration: none;
-    color: #e90052
+    color: #38003c
 }
 .standardArticle>h1 a:hover,
 .standardArticle>h2 a:hover,
@@ -40185,7 +40185,7 @@ div.matchHighlightsBanner .competition span {
 .standardArticle.featured .wrapper [class*=col-]>ol a,
 .standardArticle.featured .wrapper [class*=col-]>ul a {
     text-decoration: none;
-    color: #e90052
+    color: #38003c
 }
 .standardArticle.featured .wrapper [class*=col-]>h1 a:hover,
 .standardArticle.featured .wrapper [class*=col-]>h2 a:hover,
@@ -40278,7 +40278,7 @@ div.matchHighlightsBanner .competition span {
 .standardArticle .relatedArticles strong {
     display: block;
     font-size: 1.2rem;
-    color: #e90052;
+    color: #38003c;
     margin-bottom: 1.5rem
 }
 .standardArticle .relatedArticles a {
@@ -40292,7 +40292,7 @@ div.matchHighlightsBanner .competition span {
     box-shadow: none
 }
 .standardArticle .relatedArticles a:hover .articleLead {
-    color: #e90052
+    color: #38003c
 }
 .standardArticle .relatedArticles .articleLead {
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -40537,7 +40537,7 @@ div.matchHighlightsBanner .competition span {
     height: 45px;
     margin-right: .5rem;
     background: #fff;
-    border: 3px solid #e90052;
+    border: 3px solid #38003c;
     border-radius: 100%
 }
 .embeddedStats .teamName .badgeContainer [class*=badge] {
@@ -40601,7 +40601,7 @@ div.matchHighlightsBanner .competition span {
     display: inline-block
 }
 .embeddedStats .possessionLegend .possessionLegend--2 .possessionLegend__circle {
-    background-color: #e90052
+    background-color: #38003c
 }
 .embeddedStats .possessionLegend__stat {
     font-size: 1.2rem;
@@ -40627,7 +40627,7 @@ div.matchHighlightsBanner .competition span {
     position: relative;
     margin-bottom: 1rem;
     border-radius: 2px;
-    background: #e90052
+    background: #38003c
 }
 .embeddedStats .resultDisplay .result {
     height: 100%;
@@ -41157,7 +41157,7 @@ div.matchHighlightsBanner .competition span {
     color: #267788
 }
 .relatedArticles .articleDate {
-    background: #e90052;
+    background: #38003c;
     display: block
 }
 .relatedArticles .relatedArticle {
@@ -41488,7 +41488,7 @@ div.matchHighlightsBanner .competition span {
     display: none
 }
 .scorebox .teamName:hover {
-    color: #e90052;
+    color: #38003c;
     text-decoration: none
 }
 .scorebox .time {
@@ -41509,7 +41509,7 @@ div.matchHighlightsBanner .competition span {
 }
 .scorebox .matchScoreContainer,
 .scorebox .score {
-    background: #e90052
+    background: #38003c
 }
 .scorebox .score {
     width: 14rem;
@@ -43169,7 +43169,7 @@ div.matchHighlightsBanner .competition span {
 }
 .playerOverviewCard:focus .btn,
 .playerOverviewCard:hover .btn {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 .playerOverviewCard:focus .btn .icn,
@@ -44817,7 +44817,7 @@ div.matchHighlightsBanner .competition span {
 }
 .clubSidebar .tabs .tablist li:not(.active):focus,
 .clubSidebar .tabs .tablist li:not(.active):hover {
-    background: #e90052;
+    background: #38003c;
     color: #fff
 }
 .clubSidebar .tabs .tablist li.active {
@@ -45015,8 +45015,8 @@ div.matchHighlightsBanner .competition span {
 }
 .clubSidebar .squadListAbridged a:focus,
 .clubSidebar .squadListAbridged a:hover {
-    background: #e90052;
-    border-color: #e90052;
+    background: #38003c;
+    border-color: #38003c;
     color: #fff
 }
 .clubSidebar .squadListAbridged a:focus .icn,
@@ -49319,7 +49319,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t80 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t80 .socialSection .socialCard .actions a.time {
     color: #000
@@ -49961,7 +49961,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t6 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t6 .socialSection .socialCard .actions a.time {
     color: #000
@@ -50565,7 +50565,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t57 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t57 .socialSection .socialCard .actions a.time {
     color: #000
@@ -51207,7 +51207,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t35 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t35 .socialSection .socialCard .actions a.time {
     color: #000
@@ -52057,7 +52057,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t38 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t38 .socialSection .socialCard .actions a.time {
     color: #000
@@ -53715,7 +53715,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t30 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t30 .socialSection .socialCard .actions a.time {
     color: #000
@@ -55777,7 +55777,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t24 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t24 .socialSection .socialCard .actions a.time {
     color: #000
@@ -56419,7 +56419,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t54 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t54 .socialSection .socialCard .actions a.time {
     color: #000
@@ -57023,7 +57023,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t88 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t88 .socialSection .socialCard .actions a.time {
     color: #000
@@ -57873,7 +57873,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t2 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t2 .socialSection .socialCard .actions a.time {
     color: #000
@@ -58647,7 +58647,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t22 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t22 .socialSection .socialCard .actions a.time {
     color: #000
@@ -59289,7 +59289,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t17 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t17 .socialSection .socialCard .actions a.time {
     color: #000
@@ -61511,7 +61511,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .t39 .socialSection .socialCard .message a {
-    color: #e90052
+    color: #38003c
 }
 .t39 .socialSection .socialCard .actions a.time {
     color: #000
@@ -62048,7 +62048,7 @@ div.matchHighlightsBanner .competition span {
     transition: all .2s ease
 }
 .gallery-slider__expand .expandIcon:hover {
-    fill: #e90052
+    fill: #38003c
 }
 .gallery-slider__slides-container {
     width: 100%;
@@ -62230,7 +62230,7 @@ div.matchHighlightsBanner .competition span {
     top: 1rem;
     right: 1rem;
     text-indent: -9999px;
-    background: #e90052;
+    background: #38003c;
     border-radius: 100%;
     width: 4rem;
     height: 4rem;
@@ -62387,7 +62387,7 @@ div.matchHighlightsBanner .competition span {
         margin-bottom: 1.5rem
     }
     .gallery-slider__info--left .btn-highlight {
-        background: #e90052
+        background: #38003c
     }
     .gallery-slider__info--right {
         width: 100%;
@@ -62461,7 +62461,7 @@ div.matchHighlightsBanner .competition span {
 .statsTabMenu.toggle a:focus,
 .statsTabMenu.toggle a:hover {
     background: #38003c;
-    color: #e90052
+    color: #38003c
 }
 .statsCentreMenu {
     height: 100%;
@@ -62699,7 +62699,7 @@ div.matchHighlightsBanner .competition span {
     position: relative
 }
 .moreStatsMenu a:hover {
-    color: #e90052
+    color: #38003c
 }
 .moreStatsMenu .icn {
     position: absolute;
@@ -62711,12 +62711,12 @@ div.matchHighlightsBanner .competition span {
     width: 100%;
     max-width: 30rem;
     margin-bottom: 2rem;
-    color: #e90052;
+    color: #38003c;
     font-size: 1.8rem;
     text-transform: capitalize
 }
 .topStatsFilterDropdown .current {
-    color: #e90052;
+    color: #38003c;
     padding-bottom: 1rem
 }
 .topStatsFilterDropdown .current:after {
@@ -62969,7 +62969,7 @@ div.matchHighlightsBanner .competition span {
 }
 .statsComparison .add-club span {
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-    color: #e90052
+    color: #38003c
 }
 .statsComparison .selectionBox {
     border: 1px solid #e8e8e8;
@@ -62987,7 +62987,7 @@ div.matchHighlightsBanner .competition span {
 }
 .statsComparison .selectionBox:focus .plus-icon,
 .statsComparison .selectionBox:hover .plus-icon {
-    background: #e90052
+    background: #38003c
 }
 .statsComparison .selectionBox .comparisonCard {
     width: 19.8rem;
@@ -63121,11 +63121,11 @@ div.matchHighlightsBanner .competition span {
 }
 .popularComparisons .popularCard:focus .name,
 .popularComparisons .popularCard:hover .name {
-    color: #e90052
+    color: #38003c
 }
 .popularComparisons .popularCard:focus .iconContainer,
 .popularComparisons .popularCard:hover .iconContainer {
-    border-color: #e90052
+    border-color: #38003c
 }
 .popularComparisons .iconContainer {
     width: 3rem;
@@ -63227,7 +63227,7 @@ div.matchHighlightsBanner .competition span {
     position: absolute;
     top: 2%;
     right: 2%;
-    background-color: #e90052;
+    background-color: #38003c;
     border-radius: 100%;
     opacity: 0;
     transition: .2s
@@ -63254,7 +63254,7 @@ div.matchHighlightsBanner .competition span {
 }
 .selectionStatChooserContainer:focus,
 .selectionStatChooserContainer:hover {
-    border-color: #e90052
+    border-color: #38003c
 }
 .selectionStatChooserContainer:focus .plus-icon-small,
 .selectionStatChooserContainer:hover .plus-icon-small {
@@ -63367,7 +63367,7 @@ div.matchHighlightsBanner .competition span {
     border-left: 1px solid #dedadb
 }
 .comparisonTable .highlight {
-    color: #e90052
+    color: #38003c
 }
 .comparisonTable .inactive {
     color: rgba(0, 0, 0, .4)
@@ -63929,7 +63929,7 @@ div.matchHighlightsBanner .competition span {
     color: hsla(0, 0%, 100%, .9)
 }
 .grid-5-featured .main .videoThumb {
-    background-color: #e90052;
+    background-color: #38003c;
     width: 100%
 }
 .grid-5-featured .main .albumThumb {
@@ -63972,7 +63972,7 @@ div.matchHighlightsBanner .competition span {
         margin-bottom: 1rem
     }
     .grid-5-featured .main .thumbnail.videoThumb {
-        background: #e90052
+        background: #38003c
     }
 }
 .DFP-takeover {
@@ -64002,7 +64002,7 @@ div.matchHighlightsBanner .competition span {
     top: 1.5rem;
     right: 1.5rem;
     text-indent: -9999px;
-    background: #e90052;
+    background: #38003c;
     border-radius: 100%;
     width: 4rem;
     height: 4rem;
@@ -64051,8 +64051,8 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .usaAdventure .socialShareHover .socialShareBtn {
-    color: #e90052;
-    border-color: #e90052;
+    color: #38003c;
+    border-color: #38003c;
     border-radius: .2rem;
     padding: 1rem 1.5rem;
     line-height: 2rem;
@@ -64101,12 +64101,12 @@ div.matchHighlightsBanner .competition span {
 .competition-hero__club-logos {
     overflow: hidden;
     position: relative;
-    background: url(../i/bg-elements/usa-adventure-hero.jpg) 50%/cover no-repeat #e90052
+    background: url(../i/bg-elements/usa-adventure-hero.jpg) 50%/cover no-repeat #38003c
 }
 @media (-moz-min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2) {
     .competition-hero__club-logos {
-        background: url(../i/bg-elements/usa-adventure-hero@x2.jpg) 50%/cover no-repeat #e90052
+        background: url(../i/bg-elements/usa-adventure-hero@x2.jpg) 50%/cover no-repeat #38003c
     }
 }
 .competition-hero__club-logos .shard {
@@ -64273,7 +64273,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .landing-hero {
-    background-color: #e90052;
+    background-color: #38003c;
     background-repeat: no-repeat;
     background-size: cover
 }
@@ -64416,7 +64416,7 @@ div.matchHighlightsBanner .competition span {
 }
 .usaAdventure .competitionlist__item {
     background-color: #fff;
-    border-bottom: .2rem solid #e90052;
+    border-bottom: .2rem solid #38003c;
     box-shadow: 0 .4rem 1.4rem rgba(0, 0, 0, .1);
     min-height: 13rem;
     overflow: hidden
@@ -64582,7 +64582,7 @@ div.matchHighlightsBanner .competition span {
     display: block;
     background: #e8e8e8;
     border: 0;
-    border-bottom: 2px solid #e90052;
+    border-bottom: 2px solid #38003c;
     outline: none;
     width: 100%;
     margin: 1rem 0 4rem;
@@ -64666,7 +64666,7 @@ div.matchHighlightsBanner .competition span {
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
-    color: #e90052
+    color: #38003c
 }
 .usaAdventure .entryform__subcontainer {
     display: -webkit-box;
@@ -64787,7 +64787,7 @@ div.matchHighlightsBanner .competition span {
 .usaAdventure.summary-box:before {
     content: "";
     display: block;
-    background: #e90052;
+    background: #38003c;
     position: absolute;
     top: -1px;
     left: -1px;
@@ -64809,7 +64809,7 @@ div.matchHighlightsBanner .competition span {
 }
 .usaAdventure .summary-box__content ul li:before {
     content: "\2022";
-    color: #e90052;
+    color: #38003c;
     position: relative;
     left: -.5em
 }
@@ -65605,10 +65605,10 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .hero-slider__slide--pink .hero-slider__category {
-    color: #e90052
+    color: #38003c
 }
 .hero-slider__slide--pink .btn {
-    background: #e90052;
+    background: #38003c;
     color: #ebebe4
 }
 .hero-slider__slide--pink .btn [class*=arrow-right] {
@@ -65907,7 +65907,7 @@ div.matchHighlightsBanner .competition span {
     font-size: 4.5rem
 }
 .full-width-promo__secondary-heading {
-    color: #e90052;
+    color: #38003c;
     font-size: 6rem;
     margin-bottom: 1.5rem
 }
@@ -65974,7 +65974,7 @@ div.matchHighlightsBanner .competition span {
     color: #04f5ff
 }
 .fullWidthVideoPromo.football .fullWidthVideoPromo__widgetTitleSecondary {
-    color: #e90052
+    color: #38003c
 }
 .fullWidthVideoPromo.premier-league .fullWidthVideoPromo__widgetTitleSecondary {
     color: #fff
@@ -66228,7 +66228,7 @@ div.matchHighlightsBanner .competition span {
 .fullWidthVideoPromo__videoTitle,
 .fullWidthVideoPromo__widgetTitleSecondary {
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-    color: #e90052
+    color: #38003c
 }
 .fullWidthVideoPromo__videoTitle {
     font-size: 4.2rem;
@@ -66247,7 +66247,7 @@ div.matchHighlightsBanner .competition span {
 .fullWidthVideoPromo__runTime {
     display: inline-block;
     margin-bottom: 2rem;
-    color: #e90052;
+    color: #38003c;
     font-size: 1.2rem
 }
 .fullWidthVideoPromo__audioDescriptionLabel {
@@ -66255,7 +66255,7 @@ div.matchHighlightsBanner .competition span {
 }
 .fullWidthVideoPromo__audioDescriptionLabel .label {
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     padding: .5rem;
     font-size: 1.1rem;
@@ -66331,7 +66331,7 @@ div.matchHighlightsBanner .competition span {
 }
 .fullWidthVideoPromo__audioDesc .label {
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     padding: .5rem;
     font-size: 1.1rem;
@@ -66641,7 +66641,7 @@ div.matchHighlightsBanner .competition span {
     margin-bottom: 0
 }
 .embed-featured-article__tag {
-    color: #e90052;
+    color: #38003c;
     display: block;
     font-size: 1.2rem;
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -66664,7 +66664,7 @@ div.matchHighlightsBanner .competition span {
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out
 }
 .embed-featured-article__img-container:before {
-    background: #e90052;
+    background: #38003c;
     bottom: 0;
     content: "";
     display: block;
@@ -66738,7 +66738,7 @@ div.matchHighlightsBanner .competition span {
     border-bottom: none
 }
 .video-promo .thumbnail.videoThumb .image img {
-    border-bottom: 3px solid #e90052
+    border-bottom: 3px solid #38003c
 }
 @media (min-width: 56.25em) {
     .video-promo .thumbnail.videoThumb .image .play-icon {
@@ -66867,7 +66867,7 @@ div.matchHighlightsBanner .competition span {
 .video-promo .thumbnail.videoThumb .category .date {
     display: inline-block;
     margin-right: 3px;
-    color: #e90052
+    color: #38003c
 }
 .video-promo .thumbnail.videoThumb .title {
     line-height: 1.6;
@@ -66887,7 +66887,7 @@ div.matchHighlightsBanner .competition span {
     left: auto;
     line-height: 1;
     background: transparent;
-    color: #e90052;
+    color: #38003c;
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif
 }
 .video-promo .thumbnail.videoThumb .runTime time {
@@ -66898,7 +66898,7 @@ div.matchHighlightsBanner .competition span {
     display: inline-block;
     margin-top: 2rem;
     padding: .6rem;
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     font-size: 1.1rem
 }
@@ -67008,7 +67008,7 @@ div.matchHighlightsBanner .competition span {
     cursor: pointer
 }
 .videoWithRelated__audioDesc .label {
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     padding: .5rem;
     font-size: 1.1rem;
@@ -67039,7 +67039,7 @@ div.matchHighlightsBanner .competition span {
 }
 .videoWithRelated__status {
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-    color: #e90052;
+    color: #38003c;
     display: block;
     font-size: 1.2rem;
     margin-bottom: 1rem
@@ -67063,7 +67063,7 @@ div.matchHighlightsBanner .competition span {
 }
 .videoWithRelated__date {
     font-family: PremierSans-Light, Arial, Helvetica Neue, Helvetica, sans-serif;
-    color: #e90052;
+    color: #38003c;
     font-size: 1.4rem
 }
 .videoWithRelated__relatedColumn {
@@ -67136,7 +67136,7 @@ div.matchHighlightsBanner .competition span {
     position: absolute;
     left: 0;
     top: 0;
-    background: #e90052;
+    background: #38003c;
     opacity: 0
 }
 .videoWithRelated__videoListItem:after {
@@ -67184,7 +67184,7 @@ div.matchHighlightsBanner .competition span {
     width: 40%
 }
 .videoWithRelated__videoThumb {
-    border-bottom: 2px solid #e90052;
+    border-bottom: 2px solid #38003c;
     width: 100%;
     position: relative
 }
@@ -67236,7 +67236,7 @@ div.matchHighlightsBanner .competition span {
 .videoWithRelated__runTime time {
     display: inline-block;
     padding: .1rem .8rem;
-    background: #e90052;
+    background: #38003c;
     font-size: 1.1rem;
     height: 26px;
     color: #fff
@@ -67442,7 +67442,7 @@ div.matchHighlightsBanner .competition span {
     overflow: hidden
 }
 .section-hero.football .hero-brand-bar {
-    background: #e90052
+    background: #38003c
 }
 .section-hero.fans .section-hero__sub-title {
     background: #00ff87
@@ -67536,7 +67536,7 @@ div.matchHighlightsBanner .competition span {
     display: inline-block;
     margin-bottom: 1rem;
     padding: .4rem 2rem;
-    background: #e90052;
+    background: #38003c;
     color: #38003c;
     font-size: 3.5rem
 }
@@ -67615,7 +67615,7 @@ div.matchHighlightsBanner .competition span {
     margin-top: -2rem;
     margin-bottom: 2rem;
     overflow: hidden;
-    border-bottom: 4px solid #e90052
+    border-bottom: 4px solid #38003c
 }
 .tiplArticleHeaderContainer:before {
     content: "";
@@ -67629,16 +67629,16 @@ div.matchHighlightsBanner .competition span {
     z-index: 10
 }
 .tiplArticleHeaderContainer.football {
-    border-bottom-color: #e90052
+    border-bottom-color: #38003c
 }
 .tiplArticleHeaderContainer.football .tiplArticleHeaderLink {
-    background: #e90052
+    background: #38003c
 }
 .tiplArticleHeaderContainer.football .tiplArticleHeaderLink:hover {
     background: #b60040
 }
 .tiplArticleHeaderContainer.football .tiplArticleHeaderSubTitle {
-    color: #e90052
+    color: #38003c
 }
 .tiplArticleHeaderContainer.fans {
     border-bottom-color: #00ff87
@@ -67753,7 +67753,7 @@ div.matchHighlightsBanner .competition span {
     margin-top: -4px
 }
 .tiplArticleHeaderSubTitle {
-    color: #e90052;
+    color: #38003c;
     font-size: 3.4rem
 }
 .tiplArticleHeaderSubTitle,
@@ -67926,7 +67926,7 @@ div.matchHighlightsBanner .competition span {
     margin-top: -2rem;
     margin-bottom: 6rem;
     overflow: hidden;
-    border-bottom: 4px solid #e90052
+    border-bottom: 4px solid #38003c
 }
 .tipl-page-header__container:before {
     content: "";
@@ -67940,16 +67940,16 @@ div.matchHighlightsBanner .competition span {
     z-index: 10
 }
 .tipl-page-header__container.football {
-    border-bottom-color: #e90052
+    border-bottom-color: #38003c
 }
 .tipl-page-header__container.football .tipl-page-header__link {
-    background: #e90052
+    background: #38003c
 }
 .tipl-page-header__container.football .tipl-page-header__link:hover {
     background: #b60040
 }
 .tipl-page-header__container.football .tipl-page-header__sub-title {
-    color: #e90052
+    color: #38003c
 }
 .tipl-page-header__container.fans {
     border-bottom-color: #00ff87
@@ -68062,7 +68062,7 @@ div.matchHighlightsBanner .competition span {
     margin-top: -4px
 }
 .tipl-page-header__sub-title {
-    color: #e90052;
+    color: #38003c;
     font-size: 3.4rem
 }
 .tipl-page-header__sub-title,
@@ -68245,7 +68245,7 @@ div.matchHighlightsBanner .competition span {
     bottom: 100%;
     left: 0;
     padding: 2rem 1% 3rem;
-    border-top: 4px solid #e90052;
+    border-top: 4px solid #38003c;
     background: hsla(0, 0%, 100%, .95);
     box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, .1);
     z-index: 5;
@@ -68307,7 +68307,7 @@ div.matchHighlightsBanner .competition span {
     font-size: 1rem;
     color: #fff;
     cursor: pointer;
-    background-color: #e90052;
+    background-color: #38003c;
     transition: background-color .2s ease
 }
 .base-menu__download-close .icn {
@@ -68435,7 +68435,7 @@ div.matchHighlightsBanner .competition span {
     position: absolute;
     bottom: 0;
     right: 0;
-    background: #e90052;
+    background: #38003c;
     height: 0;
     transition: height .2s ease
 }
@@ -68663,7 +68663,7 @@ div.matchHighlightsBanner .competition span {
         fill: #00ff87
     }
     .home-page-hero__branding.hover--thefootball {
-        fill: #e90052
+        fill: #38003c
     }
     .home-page-hero .hero-brand-bar.hover--thecommunities {
         background: #04f5ff
@@ -68675,7 +68675,7 @@ div.matchHighlightsBanner .competition span {
         background: #00ff87
     }
     .home-page-hero .hero-brand-bar.hover--thefootball {
-        background: #e90052
+        background: #38003c
     }
 }
 @media (max-width: 63.9375em) {
@@ -68825,7 +68825,7 @@ div.matchHighlightsBanner .competition span {
 .player-stat .hero-brand-bar {
     -webkit-transform: none;
     transform: none;
-    background: #e90052
+    background: #38003c
 }
 .player-stat .hero-brand-bar--right {
     width: 5.3rem
@@ -68869,7 +68869,7 @@ div.matchHighlightsBanner .competition span {
     margin-right: 3rem;
     padding-top: 1rem;
     float: left;
-    border-top: 4px solid #e90052
+    border-top: 4px solid #38003c
 }
 .player-stat__position {
     font-size: 1.8rem
@@ -68881,7 +68881,7 @@ div.matchHighlightsBanner .competition span {
 }
 .player-stat__name {
     margin-bottom: 1.2rem;
-    color: #e90052;
+    color: #38003c;
     font-size: 5rem;
     line-height: 1
 }
@@ -69022,7 +69022,7 @@ div.matchHighlightsBanner .competition span {
         margin-right: 0
     }
     .player-stat__position {
-        color: #e90052;
+        color: #38003c;
         font-size: 1.4rem
     }
     .player-stat__stats {
@@ -69068,7 +69068,7 @@ div.matchHighlightsBanner .competition span {
 .article-list__title {
     display: inline-block;
     padding: 2rem 20rem 14rem;
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     font-size: 2rem
 }
@@ -69078,7 +69078,7 @@ div.matchHighlightsBanner .competition span {
     bottom: 0;
     left: 0;
     background-image: none;
-    background-color: #e90052
+    background-color: #38003c
 }
 .article-list .thumbnail .title {
     margin-bottom: 1rem;
@@ -69198,7 +69198,7 @@ div.matchHighlightsBanner .competition span {
 .video-list__title {
     display: inline-block;
     padding: 2rem 20rem 14rem;
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     font-size: 2rem
 }
@@ -69208,7 +69208,7 @@ div.matchHighlightsBanner .competition span {
     bottom: 0;
     left: 0;
     background-image: none;
-    background-color: #e90052
+    background-color: #38003c
 }
 .video-list .thumbnail .title {
     margin-bottom: 1rem;
@@ -69455,13 +69455,13 @@ div.matchHighlightsBanner .competition span {
 }
 .tipl-stats-promo--thefootball .tipl-promo-stat .tipl-promo-stat__stripe,
 .tipl-stats-promo--thefootball .tipl-promo-stat__stripe {
-    background-color: #e90052
+    background-color: #38003c
 }
 .tipl-stats-promo--thefootball .tipl-stats-promo__text-highlight {
-    color: #e90052
+    color: #38003c
 }
 .tipl-stats-promo--thefootball .tipl-stats-promo__stat-group {
-    border-top-color: #e90052
+    border-top-color: #38003c
 }
 .tipl-stats-promo--thefans .tipl-promo-stat .tipl-promo-stat__stripe {
     background-color: #00ff87
@@ -69540,7 +69540,7 @@ div.matchHighlightsBanner .competition span {
     margin-right: 0
 }
 .tipl-promo-stat--thefootball .tipl-promo-stat__stripe {
-    background-color: #e90052
+    background-color: #38003c
 }
 .tipl-promo-stat--thefans .tipl-promo-stat__stripe {
     background-color: #00ff87
@@ -69644,7 +69644,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .article-promo__tag {
-    background: #e90052;
+    background: #38003c;
     color: #fff;
     border-radius: 3px;
     display: inline-block;
@@ -69785,7 +69785,7 @@ div.matchHighlightsBanner .competition span {
 }
 .financialStandingsTableContainer .sectionHeader {
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-    color: #e90052;
+    color: #38003c;
     font-size: 1.4rem;
     text-align: center;
     margin-bottom: 2rem
@@ -69863,7 +69863,7 @@ div.matchHighlightsBanner .competition span {
 .financialStandingsTable .revealMore:focus,
 .financialStandingsTable .revealMore:hover {
     border-bottom-color: #e8e8e8;
-    background: #e90052
+    background: #38003c
 }
 .financialStandingsTable td {
     border-bottom: 1px solid #e8e8e8
@@ -69968,7 +69968,7 @@ div.matchHighlightsBanner .competition span {
 .financialStandingsTable .tableMid .revealMore.on:focus,
 .financialStandingsTable .tableMid .revealMore.on:hover {
     border-bottom-color: #e8e8e8;
-    background: #e90052
+    background: #38003c
 }
 .financialStandingsTable tr.open .revealMore {
     border-bottom-color: #e8e8e8
@@ -71929,7 +71929,7 @@ div.matchHighlightsBanner .competition span {
 .single-stat-promo {
     width: 100%;
     margin-bottom: 6rem;
-    border-bottom: 4px solid #e90052;
+    border-bottom: 4px solid #38003c;
     text-align: center
 }
 @supports (width: 100vw) {
@@ -72152,7 +72152,7 @@ div.matchHighlightsBanner .competition span {
     }
 }
 .full-width-quote-promo.football .hero-brand-bar {
-    background: #e90052
+    background: #38003c
 }
 @media (max-width: 56.25em) {
     .full-width-quote-promo {
@@ -72232,7 +72232,7 @@ div.matchHighlightsBanner .competition span {
     padding: 1.5rem;
     background: #fff;
     color: #76766f;
-    border-top: 4px solid #e90052;
+    border-top: 4px solid #38003c;
     border-radius: 3px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -72249,7 +72249,7 @@ div.matchHighlightsBanner .competition span {
     opacity: .4
 }
 .page-share__social-container .social-share .socialShareBtn:focus {
-    color: #e90052;
+    color: #38003c;
     background: #e8e8e8
 }
 .page-share__social-container .social-share .socialShareBtn:focus .icn {
@@ -72268,7 +72268,7 @@ div.matchHighlightsBanner .competition span {
 }
 @media (max-width: 56.25em) {
     .page-share__social-container .social-share .socialShareBtn:hover {
-        color: #e90052;
+        color: #38003c;
         background: #e8e8e8
     }
     .page-share__social-container .social-share .socialShareBtn:hover .icn {
@@ -72423,8 +72423,8 @@ div.matchHighlightsBanner .competition span {
     left: auto;
     margin-top: -2px;
     box-shadow: none;
-    background: #e90052;
-    background: linear-gradient(90deg, #38003c 0, #e90052 20%, #e90052);
+    background: #38003c;
+    background: linear-gradient(90deg, #38003c 0, #38003c 20%, #38003c);
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -72450,7 +72450,7 @@ div.matchHighlightsBanner .competition span {
     margin: -8px -8px 0 0;
     border-radius: 100%;
     background: #38003c;
-    border: 4px solid #e90052;
+    border: 4px solid #38003c;
     z-index: 15;
     opacity: 0;
     -webkit-transform: scale(0);
@@ -72492,8 +72492,8 @@ div.matchHighlightsBanner .competition span {
     right: auto;
     margin-top: -2px;
     box-shadow: none;
-    background: #e90052;
-    background: linear-gradient(270deg, #38003c 0, #e90052 20%, #e90052);
+    background: #38003c;
+    background: linear-gradient(270deg, #38003c 0, #38003c 20%, #38003c);
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -72519,7 +72519,7 @@ div.matchHighlightsBanner .competition span {
     margin: -8px -8px 0 0;
     border-radius: 100%;
     background: #38003c;
-    border: 4px solid #e90052;
+    border: 4px solid #38003c;
     z-index: 15;
     opacity: 0;
     -webkit-transform: scale(0);
@@ -72599,7 +72599,7 @@ div.matchHighlightsBanner .competition span {
     left: 50%;
     margin-top: 10rem;
     margin-left: -2px;
-    background-color: #e90052;
+    background-color: #38003c;
     opacity: 1!important
 }
 .season-timeline__line:before {
@@ -72613,7 +72613,7 @@ div.matchHighlightsBanner .competition span {
     margin-right: -8px;
     border-radius: 100%;
     background: #38003c;
-    border: 4px solid #e90052
+    border: 4px solid #38003c
 }
 .season-timeline__divider {
     position: relative;
@@ -72933,7 +72933,7 @@ div.matchHighlightsBanner .competition span {
     margin-bottom: .5rem;
     padding: .7rem 1rem .6rem;
     color: #fff;
-    background: #e90052;
+    background: #38003c;
     color: #38003c
 }
 .season-timeline .single-stat--no-image .single-stat__title {
@@ -73077,8 +73077,8 @@ div.matchHighlightsBanner .competition span {
         left: auto;
         margin-top: -2px;
         box-shadow: none;
-        background: #e90052;
-        background: linear-gradient(90deg, #38003c 0, #e90052 20%, #e90052);
+        background: #38003c;
+        background: linear-gradient(90deg, #38003c 0, #38003c 20%, #38003c);
         opacity: 0;
         -webkit-transform: scale(0);
         transform: scale(0);
@@ -73106,7 +73106,7 @@ div.matchHighlightsBanner .competition span {
         margin: -8px -8px 0 0;
         border-radius: 100%;
         background: #38003c;
-        border: 4px solid #e90052;
+        border: 4px solid #38003c;
         z-index: 15;
         opacity: 0;
         -webkit-transform: scale(0);
@@ -73144,8 +73144,8 @@ div.matchHighlightsBanner .competition span {
         left: auto;
         margin-top: -2px;
         box-shadow: none;
-        background: #e90052;
-        background: linear-gradient(90deg, #38003c 0, #e90052 20%, #e90052);
+        background: #38003c;
+        background: linear-gradient(90deg, #38003c 0, #38003c 20%, #38003c);
         opacity: 0;
         -webkit-transform: scale(0);
         transform: scale(0);
@@ -73173,7 +73173,7 @@ div.matchHighlightsBanner .competition span {
         margin: -8px -8px 0 0;
         border-radius: 100%;
         background: #38003c;
-        border: 4px solid #e90052;
+        border: 4px solid #38003c;
         z-index: 15;
         opacity: 0;
         -webkit-transform: scale(0);
@@ -73222,8 +73222,8 @@ div.matchHighlightsBanner .competition span {
         left: auto;
         margin-top: -2px;
         box-shadow: none;
-        background: #e90052;
-        background: linear-gradient(90deg, #38003c 0, #e90052 20%, #e90052);
+        background: #38003c;
+        background: linear-gradient(90deg, #38003c 0, #38003c 20%, #38003c);
         opacity: 0;
         -webkit-transform: scale(0);
         transform: scale(0);
@@ -73251,7 +73251,7 @@ div.matchHighlightsBanner .competition span {
         margin: -8px -8px 0 0;
         border-radius: 100%;
         background: #38003c;
-        border: 4px solid #e90052;
+        border: 4px solid #38003c;
         z-index: 15;
         opacity: 0;
         -webkit-transform: scale(0);
@@ -73313,8 +73313,8 @@ div.matchHighlightsBanner .competition span {
         left: auto;
         margin-top: -2px;
         box-shadow: none;
-        background: #e90052;
-        background: linear-gradient(90deg, #38003c 0, #e90052 20%, #e90052);
+        background: #38003c;
+        background: linear-gradient(90deg, #38003c 0, #38003c 20%, #38003c);
         opacity: 0;
         -webkit-transform: scale(0);
         transform: scale(0);
@@ -73342,7 +73342,7 @@ div.matchHighlightsBanner .competition span {
         margin: -8px -8px 0 0;
         border-radius: 100%;
         background: #38003c;
-        border: 4px solid #e90052;
+        border: 4px solid #38003c;
         z-index: 15;
         opacity: 0;
         -webkit-transform: scale(0);
@@ -73399,8 +73399,8 @@ div.matchHighlightsBanner .competition span {
         left: auto;
         margin-top: -2px;
         box-shadow: none;
-        background: #e90052;
-        background: linear-gradient(90deg, #38003c 0, #e90052 20%, #e90052);
+        background: #38003c;
+        background: linear-gradient(90deg, #38003c 0, #38003c 20%, #38003c);
         opacity: 0;
         -webkit-transform: scale(0);
         transform: scale(0);
@@ -73428,7 +73428,7 @@ div.matchHighlightsBanner .competition span {
         margin: -8px -8px 0 0;
         border-radius: 100%;
         background: #38003c;
-        border: 4px solid #e90052;
+        border: 4px solid #38003c;
         z-index: 15;
         opacity: 0;
         -webkit-transform: scale(0);
@@ -73470,8 +73470,8 @@ div.matchHighlightsBanner .competition span {
         left: auto;
         margin-top: -2px;
         box-shadow: none;
-        background: #e90052;
-        background: linear-gradient(90deg, #38003c 0, #e90052 20%, #e90052);
+        background: #38003c;
+        background: linear-gradient(90deg, #38003c 0, #38003c 20%, #38003c);
         opacity: 0;
         -webkit-transform: scale(0);
         transform: scale(0);
@@ -73499,7 +73499,7 @@ div.matchHighlightsBanner .competition span {
         margin: -8px -8px 0 0;
         border-radius: 100%;
         background: #38003c;
-        border: 4px solid #e90052;
+        border: 4px solid #38003c;
         z-index: 15;
         opacity: 0;
         -webkit-transform: scale(0);
@@ -73695,7 +73695,7 @@ div.matchHighlightsBanner .competition span {
     clear: both
 }
 .home-grown-players__stat-number {
-    color: #e90052;
+    color: #38003c;
     float: left;
     font-size: 8.5rem;
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -73751,7 +73751,7 @@ div.matchHighlightsBanner .competition span {
     margin-bottom: .5rem
 }
 .home-grown-players__increase {
-    color: #e90052;
+    color: #38003c;
     display: block;
     font-size: 9.8rem;
     font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -75486,7 +75486,7 @@ div.matchHighlightsBanner .competition span {
     text-align: center
 }
 .socialSection .socialCard.textCard .cardContent .message p a {
-    color: #e90052
+    color: #38003c
 }
 .t57 .socialSection .socialCard .cardContent .message a,
 .t88 .socialSection .socialCard .cardContent .message a,
